@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brittany J. - Javascript Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Javascript Scripts -->
+  <script defer src="scripts.js" charset="utf-8"></script>
+
+</head>
+
+<body onload="pageLoading()">
+
+<!-- Intro Section -->
+  <div id="loading" class="loading-div">
+    <img class="loading-logo" src="images/transparent-logo-white.png" alt="Brittany J Logo, Transparent Lite">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Landing Section -->
+
+<section id="page" class="loading-overlay">
+  <section id="Landing" class="landing-section">
+
+  <div class="no-flex">
+    <div class="header-blog">
+      <a href="#"><p>Check Out <br> My</p>
+      <i class="fas fa-pencil-alt"></i></a>
+      <p>Blog</p>
+    </div>
+
+    <header class="top-header">
+
+      <div class="header-logo-div">
+        <img class="header-logo" src="images/transparent-logo-white.png" alt="Brittany J. logo">
+      </div>
+
+      <div class="hamburger-menu">
+        <i onclick="assembleBurger()" class="fas fa-bars"></i>
+        <div style="display: none;" class="hamburger-ingredients-div">
+          <a href="#">ABOUT</a>
+          <a href="#">SKILLS</a>
+          <a href="#">PROJECTS</a>
+          <a href="#">CONTACT</a>
+          <a href="#">BLOG</a>
+        </div>
+      </div>
+
+      <div class="scrolling-text">
+        <h3 class="header-tagline">Coding and Designing for the Modern World...</h3>
+      </div>
+    </header>
+
+    <header>
+      <div class="lower-header">
+        <p class="issue-number">2nd</p>
+        <p class="issue-text">Second <br> Issue</p>
+      </div>
+    </header>
+
+  </div>
+    <section id="Nav-Section" class="nav-section">
+      <div id="Reveal-Btn" onclick="revealNavbar()" class="reveal-btn">
+        <i class="fas fa-angle-double-right"></i>
+      </div>
+      <nav id="Navbar" class="nav-bar">
+        <div class="nav-containers about-nav">
+          <a href="#About">
+            <img class="nav-profile-img" src="images/profile-img.png" alt="Cartoon Profile Image">
+            <p>About</p>
+          </a>
+        </div>
+        <div class="nav-containers">
+          <a href="#Projects">
+            <i class="fas fa-toolbox"></i>
+            <p>Projects</p>
+          </a>
+        </div>
+        <div class="nav-containers">
+          <a href="#Skills">
+            <i class="fas fa-comments"></i>
+            <p>Skills</p>
+          </a>
+        </div>
+        <div class="nav-containers">
+          <a href="#CTA">
+            <i class="fas fa-laptop"></i>
+            <p style="padding-bottom: 5px;">Contact</p>
+          </a>
+        </div>
+
+        <div>
+          <a class="hide-btn" href="#" id="Hide-Navbar" onclick="revealNavbar()">
+            <p>Hide</p>
+          </a>
+        </div>
+
+      </nav>
+
+    </section>
+
+    <div class="headings-centering-div">
+      <div class="headings-content">
+        <h2 class="name-title">Brittany J.</h2>
+
+        <div class="horizontal-line-div">
+          <div class="line"></div>
+          <p>THE</p>
+          <div class="line"></div>
+        </div>
+
+        <h1 class="main-heading">Developer</h1>
+
+        <div class="subheading-div">
+          <p>some clever Javascript text here</p>
+        </div>
+      </div>
+
+      <div class="cta-btn-landing">
+        <p> Activate Developer </p>
+      </div>
+    </div>
+
+    <div class="svg-arrow">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+    </svg>
+  </div>
+
+
+
+</section>
+
+  <!-- About Section -->
+  <section id="About" class="about-section">
+    <div class="about-content-div">
+
+      <div class="section-title">
+        <p>ABOUT ME...hover images...</p>
+      </div>
+
+      <div class="about-content about1">
+        <img onmouseover="aboutDecode()" class="about-imgs" src="images/profile-img.png" alt="Profile Image">
+        <h5>Who Am I?</h5>
+        <div>
+          <p style="display: none;" id="about-text-1" class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum
+            illum officia odio est quos, reprehenderit voluptate.</p>
+        </div>
+        <div class=" about-text binary">
+          <p>01001001 00100000 01101100 01101111 01110110 01100101 00100000 01110010 01100001 01101101 01100101 01101110 00101100 00100000 01100011 01101111 01100100 </p>
+        </div>
+      </div>
+
+      <div class="about-content about2">
+        <img class="about-imgs" src="images/chess.jpg" alt="Profile Image">
+        <h5>Interests</h5>
+        <div>
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum illum officia odio est quos, reprehenderit
+            voluptate.</p>
+        </div>
+      </div>
+
+      <div class="about-content about3">
+        <img class="about-imgs" src="images/laptop.jpg" alt="Profile Image">
+        <h5>Soft Skills</h5>
+        <div>
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum illum officia odio est quos, reprehenderit
+            voluptate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="Skills" class="skills-section">
+    <div class="section-title">
+      <p>SOFTWARE AND TOOLS</p>
+    </div>
+
+    <div class="desktop-skills-content">
+      <div class="skills-row">
+        <i class="fab fa-js-square yellow-skill"></i>
+        <i class="fab fa-node yellow-skill"></i>
+        <i class="fab fa-html5 green-skill"></i>
+        <i class="fab fa-css3-alt green-skill"></i>
+        <i class="fab fa-git red-skill"></i>
+        <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
+      </div>
+      <div class="skills-row">
+        <i class="fab fa-react yellow-skill"></i>
+        <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
+        <i class="fas fa-terminal green-skill"></i>
+        <i class="fab fa-bootstrap green-skill"></i>
+        <i class="fab fa-github red-skill"></i>
+        <img class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
+      </div>
+    </div>
+
+    <!-- Small Screen Skills -->
+  <section class="responsive-skills-section">
+    <div class="skills-row">
+      <i class="fab fa-js-square yellow-skill"></i>
+      <i class="fab fa-node yellow-skill"></i>
+      <i class="fab fa-react yellow-skill"></i>
+      <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
+    </div>
+
+    <div class="skills-row">
+      <i class="fab fa-html5 green-skill"></i>
+      <i class="fab fa-css3-alt green-skill"></i>
+      <i class="fas fa-terminal green-skill"></i>
+      <i class="fab fa-bootstrap green-skill"></i>
+    </div>
+
+    <div class="skills-row">
+      <i class="fab fa-git red-skill"></i>
+      <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
+      <i class="fab fa-github red-skill"></i>
+      <img class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
+    </div>
+  </section>
+
+
+
+  </section>
+
+  <!-- Projects Section -->
+  <section id="Projects" class="projects-section">
+    <div class="section-title">
+      <p>Recent Projects</p>
+    </div>
+
+    <!-- First Project -->
+    <div style="background-color: var(--primary2);" class="project-borders"></div>
+
+    <div class="project-content-wrapper">
+
+      <div class="project-thumbnails-div hide-project-img">
+        <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+      </div>
+
+      <div class="project-text-div">
+        <h3>Google Extension: Subscription Satelite</h3>
+        <h4>Javascript, CSS3, HTML5, JQuery</h4>
+
+        <div class="project-thumbnails-div reveal-project-img">
+          <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+        </div>
+        <p>
+           A financial organizer that catalogs, times, and notifies users of important subscription dates.
+           *Find this extension <a class="chromestore-link" href="#"><strong>here</strong></a> in the Chromestore*
+        </p>
+        <div class="project-btns-wrapper">
+          <div class="project-btns source-code-btn">
+            <a href="#">Source Code</a>
+          </div>
+          <div class="project-btns live-site-btn">
+            <a href="#">Live Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: var(--primary3);" class="project-borders"></div>
+
+    <!-- Second Project -->
+    <div class="project-content-wrapper project-content-mid">
+
+        <div class="project-text-div">
+        <h3>Cycle Hostel: Cyclist Travel Website</h3>
+        <h4>Javascript, CSS3, HTML5, JQuery, Node.js</h4>
+        <div class="project-thumbnails-div reveal-project-img">
+          <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+        </div>
+        <p>
+          A full-feature travel site with mobile-responsive layout, user-friendly design, landing page, booking platform, pricing page,  and speed optimized features.
+        </p>
+        <div class="project-btns-wrapper">
+          <div class="project-btns source-code-btn">
+            <a href="#">Source Code</a>
+          </div>
+          <div class="project-btns live-site-btn">
+            <a href="#">Live Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-thumbnails-div hide-project-img">
+        <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+      </div>
+
+
+    </div>
+
+    <!-- Last Project -->
+    <div style="background-color: var(--primary1);" class="project-borders"></div>
+    <div class="project-content-wrapper">
+
+
+      <div class="project-thumbnails-div hide-project-img">
+        <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+      </div>
+      <div class="project-text-div">
+        <h3>Name of Project</h3>
+        <h4>Tech Stack Used for Project</h4>
+
+        <div class="project-thumbnails-div reveal-project-img">
+          <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem debitis perspiciatis quos quibusdam, illum fugit nulla expedita maiores. Aperiam, ab quis alias incidunt possimus quibusdam minus accusamus fuga. Quidem, quisquam.
+        </p>
+        <div class="project-btns-wrapper">
+          <div class="project-btns source-code-btn">
+            <a href="#">Source Code</a>
+          </div>
+          <div class="project-btns live-site-btn">
+            <a href="#">Live Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-btns github-btn">
+      <a href="#">Check Out More on My</a>
+      <i class="fab fa-github"></i>
+    </div>
+
+
+
+  </section>
+
+  <!-- CTA Section -->
+
+  <section id="CTA" class="cta">
+    <div class="custom-shape-divider-top-1645316245">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+    </svg>
+</div>
+
+    <img class="cta-logo" src="images/logo-fff.png" alt="Light Logo">
+
+    <h1 class="cta-heading">A Catchy Call to Action Phrase</h1>
+    <h2>interested in working together? <br> let's start with a chat...</h2>
+
+    <h1 class="cta-subheading">Get Started <a href="#">HERE</a></h1>
+
+    <div class="footer-social-div">
+    <div class="footer-social-tab">
+      <p>Visit. </p>
+      <p> Follow. </p>
+      <p> Share.</p>
+    </div>
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-github"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-dev"></i>
+    </div>
+  </section>
+</section>
+  <!-- Attribution Credits -->
+  <a style="display: none;" href="https://www.freepik.com/vectors/icon">Icon vector created by rawpixel.com - www.freepik.com</a>
+  <a style="display: none;" href='https://www.freepik.com/vectors/technology'>Technology vector created by rawpixel.com - www.freepik.com</a>
+
+  <a style="display: none;" href="https://unsplash.com/@kaip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Photo by Kai Pilger on Unsplash</a>
+  <a style="display: none;" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"></a>
+
+
+  <!-- Jquery Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
