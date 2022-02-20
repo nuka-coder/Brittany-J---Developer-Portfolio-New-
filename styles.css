@@ -8,9 +8,14 @@
   --base3: #F2F2F2;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--base3);
   margin: 0;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -31,6 +36,10 @@ hr {
 a {
   font-family: Raleway, monospace;
   text-decoration: none;
+}
+/* very important to prevent overflow on x-axis */
+div {
+  min-width: 0;
 }
 
 p {
@@ -592,7 +601,7 @@ Javascript */
   height: auto;
   padding: 1em 2em;
   position: absolute;
-  top: 1em;
+  top: 4em;
   left: 6em;
 }
 
@@ -687,6 +696,7 @@ Javascript */
   margin-top: 1em;
   padding: 3rem;
   position: relative;
+  text-align: center;
   animation-name: zoom;
   animation-duration: 5.7s;
   animation-fill-mode: forwards;
@@ -697,6 +707,7 @@ Javascript */
 
 .responsive-skills-section {
   display: none;
+  justify-content: space-around;
   animation-name: skillsReveal;
   animation-duration: 2s;
   animation-fill-mode: backwards;
@@ -712,6 +723,16 @@ Javascript */
   to {
     opacity: 1;
   }
+}
+
+.responsive-skills-section .skills-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.skills-section-title {
+  top: 1em !important;
 }
 
 .skills-row {
@@ -876,7 +897,7 @@ Javascript */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 7em 0 3em;
+  padding: 7em 2em 3em;
   position: relative;
   text-align: center;
 }
@@ -901,7 +922,7 @@ Javascript */
 }
 
 .cta-subheading {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   margin-bottom: 2em;
 }
 
@@ -918,7 +939,7 @@ Javascript */
 
 .cta h2 {
   color: var(--base3);
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 500;
 }
 
@@ -1014,33 +1035,11 @@ Javascript */
 }
 
 @media only screen and (max-width: 1100px) {
-  .about-content-div {
-    flex-direction: column;
-  }
-
   .about-content {
     width: auto;
   }
 
-  .about-content p {
-    padding: 0 8.5em;
-  }
-
-  /* hide row of font awesome skills icons */
-  .desktop-skills-content {
-    display: none;
-  }
-
-  /* reveal columns of font awesome skills icons */
-  .responsive-skills-section {
-    display: flex;
-  }
-
-  .skills-row {
-    flex-wrap: wrap;
-  }
-
-  .project-content-wrapper {
+    .project-content-wrapper {
     flex-direction: column-reverse;
   }
 
@@ -1064,6 +1063,56 @@ Javascript */
   }
 }
 
+@media only screen and (max-width: 1040px) {
+  .cta-heading {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  /* hide row of font awesome skills icons */
+  .desktop-skills-content {
+    display: none;
+  }
+
+  /* reveal columns of font awesome skills icons */
+  .responsive-skills-section {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .about-content-div {
+   flex-direction: column;
+  }
+
+  .about-content {
+    width: auto;
+  }
+  .section-title {
+    top: 3em;
+    left: 0;
+  }
+  .section-title p {
+    font-size: 1.6em;
+  }
+
+  .about-content h5 {
+    font-size: 2.5em;
+  }
+
+  .about-text {
+    font-size: 1.5em;
+    padding: 0;
+  }
+
+  .about-imgs {
+    width: 20em;
+  }
+
+}
+
 @media only screen and (max-width: 800px) {
   .header-tagline {
     font-size: .8em;
@@ -1072,32 +1121,94 @@ Javascript */
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .header-logo-div {
+@media only screen and (max-width: 700px) {
+  .skills-section {
+    padding: 4rem 3rem;
+  }
+  .skills-section i {
+    font-size: 4em
+  }
+  .skill-image-jquery {
+    height: 6rem;
+  }
+  .skill-image-adobe {
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header-blog {
     display: none;
   }
+  .main-heading {
+    font-size: 20vw;
+  }
+  .line {
+    width: 50%;
+  }
+  .horizontal-line-div {
+    justify-content: center;
+  }
+  .name-title {
+    font-size: 40px;
+  }
+  .headings-centering-div {
+    padding: 0 3em;
+  }
+}
 
-  .lower-header {
-    margin: .5rem 0;
+@media only screen and (max-width: 650px) {
+
+  .section-title p {
+    font-size: 1.5em
+  }
+  .section-title {
+    top: 1em;
+    left: 0em;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .section-title {
+    position: static;
+    margin: 1em;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .header-blog {
-    display: none;
+  .responsive-skills-section {
+    flex-wrap: wrap;
   }
-
-  .header-tagline {
-    font-size: 11px;
-    line-height: normal;
-    margin: 0;
+  .responsive-skills-section .skills-row {
+    flex-direction: row;
   }
 }
 
-@media only screen and (max-width: 370px) {
-  .section-title {
-    left: auto;
-    top: .5em;
-    width: 50vw;
+@media only screen and (max-width: 430px) {
+  .about-imgs {
+    width: 15em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cta-btn-landing {
+    padding: 1em;
+  }
+  .cta-btn-landing p {
+    font-size: 1em;
+  }
+  .headings-centering-div {
+    padding: 2em 1em;
+  }
+  .headings-content {
+    text-align: center;
+  }
+  .header-tagline {
+    font-size: 10px;
+    line-height: normal;
+    margin: 0;
+  }
+  .main-heading {
+    padding-bottom:.5em;
   }
 }
