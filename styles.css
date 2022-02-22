@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  font-family: American Captain, monospace;
+  font-family: american_captainregular, monospace;
   font-size: 4rem;
 }
 
@@ -482,7 +482,7 @@ Javascript */
 
 .name-title {
   color: var(--primary3);
-  font-family: American Captain;
+  font-family: american_captainregular;
   font-size: 3.375em;
   letter-spacing: 2px;
   margin: 0;
@@ -500,7 +500,7 @@ Javascript */
 
 .main-heading {
   color: var(--primary3);
-  font-family: American Captain;
+  font-family: american_captainregular;
   font-size: 14.8em;
   letter-spacing: .05em;
   line-height: 1;
@@ -921,7 +921,7 @@ Javascript */
 .cta-heading,
 .cta-subheading {
   color: var(--base3);
-  font-family: American Captain;
+  font-family: american_captainregular;
   font-size: 5rem;
   letter-spacing: 5px;
   line-height: 1;
@@ -937,7 +937,7 @@ Javascript */
 
 .cta-subheading a {
   color: var(--primary1);
-  font-family: American Captain;
+  font-family: american_captainregular;
   text-decoration: underline;
   text-shadow: none;
 }
