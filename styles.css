@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'american_captainregular';
-    src: url('font/american_captain-webfont.woff2') format('woff2'),
-         url('font/american_captain-webfont.woff') format('woff');
+    src: url('american_captain-webfont.woff2') format('woff2'),
+         url('american_captain-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
