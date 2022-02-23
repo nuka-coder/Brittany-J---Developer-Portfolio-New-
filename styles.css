@@ -610,6 +610,7 @@ Javascript */
   height: auto;
   padding: 1em 2em;
   position: absolute;
+  text-align: center;
   top: 4em;
   left: 6em;
 }
@@ -716,7 +717,7 @@ Javascript */
 
 .responsive-skills-section {
   display: none;
-  justify-content: space-around;
+  justify-content: center;
   animation-name: skillsReveal;
   animation-duration: 2s;
   animation-fill-mode: backwards;
@@ -762,11 +763,11 @@ Javascript */
 }
 
 .skill-image-adobe {
-  height: 5rem;
+  height: 5em;
 }
 
 .skill-image-jquery {
-  height: 7rem;
+  height: 7em;
 }
 
 .yellow-skill {
@@ -783,6 +784,7 @@ Javascript */
 
 /* Project Section */
 .projects-section {
+  background-color: var(--base3);
   margin: 1em 0 5em;
   padding: 0 5em;
   position: relative;
@@ -1086,7 +1088,9 @@ Javascript */
 
   /* reveal columns of font awesome skills icons */
   .responsive-skills-section {
+    align-items: stretch;
     display: flex;
+    justify-content: space-around;
   }
 
 }
@@ -1179,8 +1183,23 @@ Javascript */
 
 @media only screen and (max-width: 530px) {
   .section-title {
+    padding: 1em 8em;
     position: static;
-    margin: 1em;
+    margin: 1em 0 2em;
+  }
+  .skills-section .section-title {
+    padding: 1em .5em;
+  }
+  .body,
+  .svg-arrow {
+    background-color: var(--primary3);
+  }
+  .svg-arrow .shape-fill {
+    display: none;
+  }
+  .skills-section,
+  .projects-section {
+    margin-top: 0;
   }
 }
 
@@ -1191,11 +1210,37 @@ Javascript */
   .responsive-skills-section .skills-row {
     flex-direction: row;
   }
+  .skills-section i {
+    font-size: 4em;
+  }
+  .skill-image-jquery {
+    height: 5em;
+  }
+  .skill-image-adobe {
+    height: 3em;
+  }
 }
 
 @media only screen and (max-width: 430px) {
   .about-imgs {
     width: 15em;
+  }
+  .responsive-skills-section {
+    flex-direction: column;
+  }
+  .responsive-skills-section .skills-row {
+    flex-direction: column;
+  }
+  .skills-section i {
+    font-size: 6em;
+    margin: .5em;
+  }
+  .skill-image-jquery {
+    height: 6em;
+  }
+  .skill-image-adobe {
+    height: 6em;
+    margin: .7em;
   }
 }
 
@@ -1207,6 +1252,7 @@ Javascript */
     font-size: 1em;
   }
   .headings-centering-div {
+    margin-top: 1em;
     padding: 2em 1em;
   }
   .headings-content {
