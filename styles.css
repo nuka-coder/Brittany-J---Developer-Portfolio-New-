@@ -8,6 +8,15 @@
   --base3: #F2F2F2;
 }
 
+@font-face {
+    font-family: 'american_captainregular';
+    src: url('american_captain-webfont.woff2') format('woff2'),
+         url('american_captain-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
   overflow-x: hidden;
 }
