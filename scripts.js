@@ -1,3 +1,18 @@
+
+
+// Revealing page
+var toLoad;
+function pageLoading() {
+  toLoad = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  $("#loading").css("display", "none");
+  $("#page").fadeIn("slow");
+}
+
+
+
 // Navbar //
 
 var navbar = document.getElementById("Navbar");
@@ -10,12 +25,6 @@ function revealNavbar(e) {
    navRevealBtn.classList.toggle("reveal-toggle");
    e.preventDefault();
  }
-
-// Hide Navbar, Reveal Button
- // function hideNav() {
- //    $("#Navbar").toggleClass("nav-reveal");
- //    $("#Reveal-Btn").toggleClass("reveal-toggle");
- //  }
 
 // Navbar Fixed on scroll
 
@@ -41,13 +50,14 @@ function aboutDecode() {
   $(".binary").css("display", "none");
 }
 
-// Revealing page
-var toLoad;
-function pageLoading() {
-  toLoad = setTimeout(showPage, 1000);
-}
+// Hover Effect for source code btns
 
-function showPage() {
-  $("#loading").css("display", "none");
-  $("#page").fadeIn("slow");
-}
+var sourceBtn = $(".source-code-btn");
+
+sourceBtn.hover(function(){
+  $(this).css("background-color", "var(--primary1)");
+  $(this).children('a').css("color", "var(--base3)");
+}, function(){
+  $(this).css("background-color", "var(--base3)");
+  $(this).children('a').css("color", "var(--primary1)");
+});

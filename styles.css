@@ -240,19 +240,19 @@ p {
 .header-blog p {
   color: var(--base1);
   font-family: Raleway, sans-serif;
-  font-size: .7rem;
+  font-size: 14px;
   font-weight: 700;
 }
 
-.header-blog .fas {
+.header-blog .fab {
   color: var(--primary2);
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 7px 0;
-  transform: rotate(20deg);
 }
 
-.header-blog .fas:hover {
+.header-blog .fab:hover,
+.header-blog .fab:active {
   color: var(--primary1);
 }
 
@@ -275,7 +275,8 @@ p {
   transition: color 400ms ease-in;
 }
 
-.hamburger-menu .fas:hover {
+.hamburger-menu .fas:hover,
+.hamburger-menu .fab:active {
   color: rgba(100, 0, 0, .7);
 }
 
@@ -285,7 +286,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 2em;
+  padding: 2em .5em;
   position: absolute;
   text-align: center;
   top: 3rem;
@@ -300,11 +301,15 @@ p {
   font-family: Raleway, monospace;
   font-size: 1.5em;
   padding: .25rem 0;
+  width: 100%;
 }
 
 .hamburger-ingredients-div a:hover {
-  color: var(--primary2);
+  background-color: var(--base3);
+  color: var(--base1);
+  cursor: pointer;
   font-weight: 700;
+  width: inherit;
 }
 
 /* Lower Header */
@@ -612,7 +617,7 @@ Javascript */
   position: absolute;
   text-align: center;
   top: 4em;
-  left: 6em;
+  left: 4em;
 }
 
 .section-title p {
@@ -866,10 +871,10 @@ Javascript */
 .source-code-btn a {
   color: var(--primary1);
 }
-
+/*
 .source-code-btn:hover {
   background-color: var(--primary1);
-}
+} */
 
 .live-site-btn a {
   color: var(--base3);
@@ -1013,6 +1018,13 @@ Javascript */
 }
 
 /* Media Queries */
+
+@media only screen and (min-width: 1700px) {
+  .header-blog {
+    right: 10%;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   .header-blog {
     right: 3em;
