@@ -41,6 +41,16 @@ $(window).scroll(function(){
 
 function assembleBurger() {
   $(".hamburger-ingredients-div").slideToggle();
+  fixedHeader();
+}
+
+// Function for fixing header
+
+function fixedHeader() {
+  $(".header-blog").toggleClass("header-blog-fix");
+  $(".scrolling-text").toggleClass("scrolling-text-fix");
+  $(".hamburger-ingredients-div").toggleClass("hamburger-ingredients-fix");
+  $(".hamburger-menu").toggleClass("hamburger-menu-fix");
 }
 
 // Decoding Binary for About Section

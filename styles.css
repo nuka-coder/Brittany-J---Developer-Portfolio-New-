@@ -312,6 +312,29 @@ p {
   width: inherit;
 }
 
+/* Classes to toggle for fixed header */
+
+.header-blog-fix {
+  z-index: 105;
+}
+
+.hamburger-menu-fix {
+  background-color: var(--primary2);
+  position: fixed;
+  z-index: 101;
+}
+
+.hamburger-ingredients-fix {
+  position: fixed;
+  top: 4.25rem;
+}
+
+.scrolling-text-fix {
+  background-color: var(--primary2);
+  position: fixed;
+  z-index: 100;
+}
+
 /* Lower Header */
 .lower-header {
   align-items: center;
@@ -832,6 +855,10 @@ Javascript */
   text-decoration: underline;
 }
 
+.chromestore-link:hover {
+  color: var(--primary2);
+}
+
 .project-borders {
   height: 2rem;
   margin: 1em 0;
@@ -942,7 +969,6 @@ Javascript */
   letter-spacing: 5px;
   line-height: 1;
   margin: 0;
-  text-shadow: -1px 5px var(--primary2);
   text-transform: uppercase;
 }
 
