@@ -9,12 +9,11 @@
 }
 
 @font-face {
-    font-family: 'american_captainregular';
-    src: url('american_captain-webfont.woff2') format('woff2'),
-         url('american_captain-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'american_captainregular';
+  src: url('american_captain-webfont.woff2') format('woff2'),
+    url('american_captain-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
@@ -46,6 +45,7 @@ a {
   font-family: Raleway, monospace;
   text-decoration: none;
 }
+
 /* very important to prevent overflow on x-axis */
 div {
   min-width: 0;
@@ -122,10 +122,10 @@ p {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 } */
-
 /* Overlay */
 .loading-overlay {
-  display: none;
+  display: inherit;
+  /* display: none; for loading screen */
 }
 
 /* Landing Section  */
@@ -134,8 +134,7 @@ p {
   background-image: url(images/night-sky.jpg);
   background-position: 0 0;
   display: flex;
-  height: 100vh;
-  justify-content: center;
+  height: fit-content;
   flex-direction: column;
   margin-bottom: 2em;
   position: relative;
@@ -310,6 +309,28 @@ p {
   cursor: pointer;
   font-weight: 700;
   width: inherit;
+}
+
+/* Classes to toggle for fixed header */
+.header-blog-fix {
+  z-index: 105;
+}
+
+.hamburger-menu-fix {
+  background-color: var(--primary2);
+  position: fixed;
+  z-index: 101;
+}
+
+.hamburger-ingredients-fix {
+  position: fixed;
+  top: 4.25rem;
+}
+
+.scrolling-text-fix {
+  background-color: var(--primary2);
+  position: fixed;
+  z-index: 100;
 }
 
 /* Lower Header */
@@ -578,26 +599,25 @@ Javascript */
 }
 
 /*  Contact Curve */
-
 .custom-shape-divider-top-1645316245 {
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-top-1645316245 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 90px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
 }
 
 .custom-shape-divider-top-1645316245 .shape-fill {
-    fill: #F2F2F2;
+  fill: #F2F2F2;
 }
 
 /* About Section */
@@ -832,6 +852,10 @@ Javascript */
   text-decoration: underline;
 }
 
+.chromestore-link:hover {
+  color: var(--primary2);
+}
+
 .project-borders {
   height: 2rem;
   margin: 1em 0;
@@ -871,11 +895,11 @@ Javascript */
 .source-code-btn a {
   color: var(--primary1);
 }
+
 /*
 .source-code-btn:hover {
   background-color: var(--primary1);
 } */
-
 .live-site-btn a {
   color: var(--base3);
 }
@@ -918,13 +942,17 @@ Javascript */
 
 /* CTA Section */
 .cta {
-  background-image: url(images/night-stars.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(images/night-sky.jpg);
+  background-position: 0 0;
   padding: 7em 2em 3em;
   position: relative;
   text-align: center;
+  animation-name: zoom;
+  animation-duration: 5.7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
 }
 
 .cta-logo {
@@ -942,7 +970,6 @@ Javascript */
   letter-spacing: 5px;
   line-height: 1;
   margin: 0;
-  text-shadow: -1px 5px var(--primary2);
   text-transform: uppercase;
 }
 
@@ -1018,7 +1045,6 @@ Javascript */
 }
 
 /* Media Queries */
-
 @media only screen and (min-width: 1700px) {
   .header-blog {
     right: 10%;
@@ -1071,7 +1097,7 @@ Javascript */
     width: auto;
   }
 
-    .project-content-wrapper {
+  .project-content-wrapper {
     flex-direction: column-reverse;
   }
 
@@ -1101,7 +1127,14 @@ Javascript */
   }
 }
 
+@media only screen and (max-width: 1100px) {
+  .headings-content {
+    margin-top: 7em;
+  }
+}
+
 @media only screen and (max-width: 920px) {
+
   /* hide row of font awesome skills icons */
   .desktop-skills-content {
     display: none;
@@ -1113,21 +1146,22 @@ Javascript */
     display: flex;
     justify-content: space-around;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
   .about-content-div {
-   flex-direction: column;
+    flex-direction: column;
   }
 
   .about-content {
     width: auto;
   }
+
   .section-title {
     top: 3em;
     left: 0;
   }
+
   .section-title p {
     font-size: 1.6em;
   }
@@ -1146,9 +1180,8 @@ Javascript */
   }
 
   .footer-social-tab {
-    display:  none;
+    display: none;
   }
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -1157,12 +1190,15 @@ Javascript */
     line-height: normal;
     margin: .8em 0;
   }
+
   .projects-section {
     padding: 0 0 5em;
   }
+
   .project-content-wrapper {
-  padding: 1em 3em;
+    padding: 1em 3em;
   }
+
   .project-text-div p {
     width: fit-content;
   }
@@ -1172,12 +1208,15 @@ Javascript */
   .skills-section {
     padding: 4rem 3rem;
   }
+
   .skills-section i {
     font-size: 4em
   }
+
   .skill-image-jquery {
     height: 6rem;
   }
+
   .skill-image-adobe {
     height: 4rem;
   }
@@ -1187,28 +1226,33 @@ Javascript */
   .header-blog {
     display: none;
   }
+
   .main-heading {
     font-size: 20vw;
   }
+
   .line {
     width: 50%;
   }
+
   .horizontal-line-div {
     justify-content: center;
   }
+
   .name-title {
     font-size: 40px;
   }
+
   .headings-centering-div {
     padding: 0 3em;
   }
 }
 
 @media only screen and (max-width: 650px) {
-
   .section-title p {
     font-size: 1.5em
   }
+
   .section-title {
     top: 1em;
     left: 0em;
@@ -1227,43 +1271,56 @@ Javascript */
     margin: 1em 0 2em;
     width: 40vw;
   }
+
   .skills-section .section-title {
     padding: 1em .5em;
     width: auto;
   }
+
   .body,
   .svg-arrow {
     background-color: var(--primary3);
   }
+
   .svg-arrow .shape-fill {
     display: none;
   }
+
   .skills-section,
   .projects-section {
     margin: 0 auto;
   }
+
   .top-border {
     margin-top: 0;
   }
+
   .visible-project-title {
     display: none;
   }
+
   .project-title-hidden {
     display: inherit;
+    margin: 0 auto;
   }
+
   .project-thumbnails {
     width: 70vw;
   }
+
   .cta {
     padding: 7em 0 3em;
   }
+
   .cta-heading {
     font-size: 3em;
     padding: 0 1em;
   }
+
   .cta h2 {
     font-size: 1.5em;
   }
+
   .cta-subheading {
     font-size: 2em;
   }
@@ -1273,47 +1330,57 @@ Javascript */
   .responsive-skills-section {
     flex-wrap: wrap;
   }
+
   .responsive-skills-section .skills-row {
     flex-direction: row;
   }
+
   .skills-section i {
     font-size: 4em;
   }
+
   .skill-image-jquery {
     height: 5em;
   }
+
   .skill-image-adobe {
     height: 3em;
   }
-  .github-btn {
 
-  }
+  .github-btn {}
 }
 
 @media only screen and (max-width: 430px) {
   .about-imgs {
     width: 15em;
   }
+
   .responsive-skills-section {
     flex-direction: column;
   }
+
   .responsive-skills-section .skills-row {
     flex-direction: column;
   }
+
   .skills-section i {
     font-size: 6em;
     margin: .5em;
   }
+
   .skill-image-jquery {
     height: 6em;
   }
+
   .skill-image-adobe {
     height: 6em;
     margin: .7em;
   }
+
   .project-btns-wrapper {
     flex-direction: column;
   }
+
   .project-btns {
     width: 50%;
   }
@@ -1323,22 +1390,27 @@ Javascript */
   .cta-btn-landing {
     padding: 1em;
   }
+
   .cta-btn-landing p {
     font-size: 1em;
   }
+
   .headings-centering-div {
     margin-top: 1em;
     padding: 2em 1em;
   }
+
   .headings-content {
     text-align: center;
   }
+
   .header-tagline {
     font-size: 10px;
     line-height: normal;
     margin: 0;
   }
+
   .main-heading {
-    padding-bottom:.5em;
+    padding-bottom: .5em;
   }
 }
