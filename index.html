@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -30,7 +30,7 @@
 
   <!-- onload="pageLoading()" -->
 
-<!-- Intro Section -->
+  <!-- Intro Section -->
   <!-- <div id="loading" class="loading-div">
     <img class="loading-logo" src="images/transparent-logo-white.png" alt="Brittany J Logo, Transparent Lite">
     <div class="loader"></div>
@@ -38,351 +38,369 @@
 
   <!-- Landing Section -->
 
-<section id="page" class="loading-overlay">
-  <section id="Landing" class="landing-section">
+  <section id="page" class="loading-overlay">
+    <section id="Landing" class="landing-section">
 
-  <div class="no-flex">
-    <div class="header-blog">
-      <a href="https://dev.to/nuka_coder" target="_blank"><p>Check Out <br> My</p>
-      <i class="fab fa-dev"></i></a>
-      <p>Blog</p>
-    </div>
+      <div class="no-flex">
+        <div class="header-blog">
+          <a href="https://dev.to/nuka_coder" target="_blank">
+            <p>Check Out <br> My</p>
+            <i class="fab fa-dev"></i>
+          </a>
+          <p>Blog</p>
+        </div>
 
-    <header class="top-header">
+        <header class="top-header">
 
-      <div class="header-logo-div">
-        <img class="header-logo" src="images/transparent-logo-white.png" alt="Brittany J. logo">
+          <div class="header-logo-div">
+            <a href="index.html">
+              <img class="header-logo" src="images/transparent-logo-white.png" alt="Brittany J. logo">
+            </a>
+          </div>
+
+          <div class="hamburger-menu">
+            <i onclick="assembleBurger()" class="fas fa-bars"></i>
+            <div style="display: none;" class="hamburger-ingredients-div">
+              <a class="hamburger-ingredient" href="#About">ABOUT</a>
+              <a class="hamburger-ingredient" href="#Skills">SKILLS</a>
+              <a class="hamburger-ingredient" href="#Projects">PROJECTS</a>
+              <a class="hamburger-ingredient" href="contact.html">CONTACT</a>
+              <a class="hamburger-ingredient" href="https://dev.to/nuka_coder" target="_blank">BLOG</a>
+            </div>
+          </div>
+
+          <div class="scrolling-text">
+            <h3 class="header-tagline">Coding and Designing for the Modern World...</h3>
+          </div>
+        </header>
+
+        <header>
+          <div class="lower-header">
+            <p class="issue-number">2nd</p>
+            <p class="issue-text">Second <br> Issue</p>
+          </div>
+        </header>
+
+      </div>
+      <section id="Nav-Section" class="nav-section">
+        <div id="Reveal-Btn" onclick="revealNavbar()" class="reveal-btn">
+          <i class="fas fa-angle-double-right"></i>
+        </div>
+        <nav id="Navbar" class="nav-bar">
+          <div class="nav-containers about-nav">
+            <a href="#About">
+              <img class="nav-profile-img" src="images/profile-img.png" alt="Cartoon Profile Image">
+              <p>About</p>
+            </a>
+          </div>
+          <div class="nav-containers">
+            <a href="#Projects">
+              <i class="fas fa-toolbox"></i>
+              <p>Projects</p>
+            </a>
+          </div>
+          <div class="nav-containers">
+            <a href="#Skills">
+              <i class="fas fa-comments"></i>
+              <p>Skills</p>
+            </a>
+          </div>
+          <div class="nav-containers">
+            <a href="contact.html">
+              <i class="fas fa-laptop"></i>
+              <p style="padding-bottom: 5px;">Contact</p>
+            </a>
+          </div>
+
+          <div>
+            <a class="hide-btn" href="#" id="Hide-Navbar" onclick="revealNavbar()">
+              <p>Hide</p>
+            </a>
+          </div>
+
+        </nav>
+
+      </section>
+
+      <div class="headings-centering-div">
+        <div class="headings-content">
+          <h2 class="name-title">Brittany J.</h2>
+
+          <div class="horizontal-line-div">
+            <div class="line"></div>
+            <p>THE</p>
+            <div class="line"></div>
+          </div>
+
+          <h1 class="main-heading">Developer</h1>
+
+          <div class="subheading-div">
+            <p>some clever Javascript text here</p>
+          </div>
+        </div>
+
+        <div class="cta-btn-landing">
+          <p> Activate Developer </p>
+        </div>
       </div>
 
-      <div class="hamburger-menu">
-        <i onclick="assembleBurger()" class="fas fa-bars"></i>
-        <div style="display: none;" class="hamburger-ingredients-div">
-          <a href="#About">ABOUT</a>
-          <a href="#Skills">SKILLS</a>
-          <a href="#Projects">PROJECTS</a>
-          <a href="#CTA">CONTACT</a>
-          <a href="https://dev.to/nuka_coder" target="_blank">BLOG</a>
-        </div>
+      <div class="svg-arrow">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+        </svg>
       </div>
 
-      <div class="scrolling-text">
-        <h3 class="header-tagline">Coding and Designing for the Modern World...</h3>
-      </div>
-    </header>
 
-    <header>
-      <div class="lower-header">
-        <p class="issue-number">2nd</p>
-        <p class="issue-text">Second <br> Issue</p>
-      </div>
-    </header>
-
-  </div>
-    <section id="Nav-Section" class="nav-section">
-      <div id="Reveal-Btn" onclick="revealNavbar()" class="reveal-btn">
-        <i class="fas fa-angle-double-right"></i>
-      </div>
-      <nav id="Navbar" class="nav-bar">
-        <div class="nav-containers about-nav">
-          <a href="#About">
-            <img class="nav-profile-img" src="images/profile-img.png" alt="Cartoon Profile Image">
-            <p>About</p>
-          </a>
-        </div>
-        <div class="nav-containers">
-          <a href="#Projects">
-            <i class="fas fa-toolbox"></i>
-            <p>Projects</p>
-          </a>
-        </div>
-        <div class="nav-containers">
-          <a href="#Skills">
-            <i class="fas fa-comments"></i>
-            <p>Skills</p>
-          </a>
-        </div>
-        <div class="nav-containers">
-          <a href="#CTA">
-            <i class="fas fa-laptop"></i>
-            <p style="padding-bottom: 5px;">Contact</p>
-          </a>
-        </div>
-
-        <div>
-          <a class="hide-btn" href="#" id="Hide-Navbar" onclick="revealNavbar()">
-            <p>Hide</p>
-          </a>
-        </div>
-
-      </nav>
 
     </section>
 
-    <div class="headings-centering-div">
-      <div class="headings-content">
-        <h2 class="name-title">Brittany J.</h2>
+    <!-- About Section -->
+    <section id="About" class="about-section">
+      <div class="about-content-div">
 
-        <div class="horizontal-line-div">
-          <div class="line"></div>
-          <p>THE</p>
-          <div class="line"></div>
+        <div class="section-title" data-aos="flip-down" data-aos-delay="500" data-aos-duration="2000">
+          <p>ABOUT ME</p>
         </div>
 
-        <h1 class="main-heading">Developer</h1>
-
-        <div class="subheading-div">
-          <p>some clever Javascript text here</p>
-        </div>
-      </div>
-
-      <div class="cta-btn-landing">
-        <p> Activate Developer </p>
-      </div>
-    </div>
-
-    <div class="svg-arrow">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
-    </svg>
-  </div>
-
-
-
-</section>
-
-  <!-- About Section -->
-  <section id="About" class="about-section">
-    <div class="about-content-div">
-
-      <div class="section-title" data-aos="fade-left" data-aos-delay="500" data-aos-duration="2000" >
-        <p>ABOUT ME</p>
-      </div>
-
-      <div class="about-content about1" data-aos="fade-left">
-        <img class="about-imgs" src="images/profile-img.png" alt="Profile Image">
-        <h5>Who Am I?</h5>
-        <div>
-          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum
-            illum officia odio est quos, reprehenderit voluptate.</p>
-        </div>
-        <!-- <div class=" about-text binary">
+        <div class="about-content about1" data-aos="fade-left">
+          <img class="about-imgs" src="images/profile-img.png" alt="Profile Image">
+          <h5>Who Am I?</h5>
+          <div>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum
+              illum officia odio est quos, reprehenderit voluptate.</p>
+          </div>
+          <!-- <div class=" about-text binary">
           <p class="about-text">01001001 00100000 01101100 01101111 01110110 01100101 00100000 01110010 01100001 01101101 01100101 01101110 00101100 00100000 01100011 01101111 01100100 </p>
         </div> -->
-      </div>
+        </div>
 
-      <div class="about-content about2" data-aos="fade-in">
-        <img class="about-imgs" src="images/chess.jpg" alt="Profile Image">
-        <h5>Interests</h5>
-        <div>
-          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum illum officia odio est quos, reprehenderit
-            voluptate.</p>
+        <div class="about-content about2" data-aos="fade-in">
+          <img class="about-imgs" src="images/chess.jpg" alt="Profile Image">
+          <h5>Interests</h5>
+          <div>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum illum officia odio est quos,
+              reprehenderit
+              voluptate.</p>
+          </div>
+        </div>
+
+        <div class="about-content about3" data-aos="fade-right">
+          <img class="about-imgs" src="images/laptop.jpg" alt="Profile Image">
+          <h5>Soft Skills</h5>
+          <div>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum illum officia odio est quos,
+              reprehenderit
+              voluptate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="Skills" class="skills-section">
+      <div class="section-title skills-section-title" data-aos="flip-down">
+        <p>SOFTWARE AND TOOLS</p>
+      </div>
+      <!-- Desktop Skills Section -->
+      <div class="desktop-skills-content">
+        <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
+          <i class="fab fa-js-square yellow-skill"></i>
+          <i class="fab fa-node yellow-skill"></i>
+          <i class="fab fa-html5 green-skill"></i>
+          <i class="fab fa-css3-alt green-skill"></i>
+          <i class="fab fa-git red-skill"></i>
+          <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
+        </div>
+        <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
+          <i class="fab fa-react yellow-skill"></i>
+          <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
+          <i class="fas fa-terminal green-skill"></i>
+          <i class="fab fa-bootstrap green-skill"></i>
+          <i class="fab fa-github red-skill"></i>
+          <img class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
         </div>
       </div>
 
-      <div class="about-content about3" data-aos="fade-right">
-        <img class="about-imgs" src="images/laptop.jpg" alt="Profile Image">
-        <h5>Soft Skills</h5>
-        <div>
-          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus debitis provident et illo, tempore molestiae voluptatibus corporis accusantium alias, cum doloribus ex harum illum officia odio est quos, reprehenderit
-            voluptate.</p>
+      <!-- Small Screen Skills -->
+      <section class="responsive-skills-section">
+        <div class="skills-row" data-aos="fade-in" data-aos-delay="250" data-aos-easing="ease-in-out">
+          <i class="fab fa-js-square yellow-skill"></i>
+          <i class="fab fa-node yellow-skill"></i>
+          <i class="fab fa-react yellow-skill"></i>
+          <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
         </div>
-      </div>
-    </div>
-  </section>
 
+        <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="750">
+          <i class="fab fa-html5 green-skill"></i>
+          <i class="fab fa-css3-alt green-skill"></i>
+          <i class="fas fa-terminal green-skill"></i>
+          <i class="fab fa-bootstrap green-skill"></i>
+        </div>
 
-  <!-- Skills Section -->
-  <section id="Skills" class="skills-section">
-    <div class="section-title skills-section-title" data-aos="fade-left">
-      <p>SOFTWARE AND TOOLS</p>
-    </div>
-    <!-- Desktop Skills Section -->
-    <div class="desktop-skills-content">
-      <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
-        <i class="fab fa-js-square yellow-skill"></i>
-        <i class="fab fa-node yellow-skill"></i>
-        <i class="fab fa-html5 green-skill"></i>
-        <i class="fab fa-css3-alt green-skill"></i>
-        <i class="fab fa-git red-skill"></i>
-        <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
-      </div>
-      <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
-        <i class="fab fa-react yellow-skill"></i>
-        <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
-        <i class="fas fa-terminal green-skill"></i>
-        <i class="fab fa-bootstrap green-skill"></i>
-        <i class="fab fa-github red-skill"></i>
-        <img class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
-      </div>
-    </div>
-
-    <!-- Small Screen Skills -->
-  <section class="responsive-skills-section">
-    <div class="skills-row" data-aos="fade-in" data-aos-delay="250" data-aos-easing="ease-in-out">
-      <i class="fab fa-js-square yellow-skill"></i>
-      <i class="fab fa-node yellow-skill"></i>
-      <i class="fab fa-react yellow-skill"></i>
-      <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
-    </div>
-
-    <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="750">
-      <i class="fab fa-html5 green-skill"></i>
-      <i class="fab fa-css3-alt green-skill"></i>
-      <i class="fas fa-terminal green-skill"></i>
-      <i class="fab fa-bootstrap green-skill"></i>
-    </div>
-
-    <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1250">
-      <i class="fab fa-git red-skill"></i>
-      <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
-      <i class="fab fa-github red-skill"></i>
-      <img class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
-    </div>
-  </section>
+        <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1250">
+          <i class="fab fa-git red-skill"></i>
+          <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
+          <i class="fab fa-github red-skill"></i>
+          <img class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
+        </div>
+      </section>
 
 
 
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="Projects" class="projects-section">
-    <div class="section-title project-title visible-project-title" data-aos="fade-left" data-aos-offset="200">
-      <p>RECENT PROJECTS</p>
-    </div>
-
-    <!-- First Project -->
-    <div style="background-color: var(--primary2);" class="project-borders top-border"></div>
-    <div class="section-title project-title project-title-hidden">
-      <p>RECENT PROJECTS</p>
-    </div>
-    <div class="project-content-wrapper">
-
-      <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="200">
-        <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+    <!-- Projects Section -->
+    <section id="Projects" class="projects-section">
+      <div class="section-title project-title visible-project-title" data-aos="flip-down" data-aos-offset="200">
+        <p>RECENT PROJECTS</p>
       </div>
 
-      <div class="project-text-div" data-aos="fade-right" data-aos-offset="200">
-        <h3>Google Extension: Subscription Satelite</h3>
-        <h4>Javascript, CSS3, HTML5, JQuery</h4>
+      <!-- First Project -->
+      <div style="background-color: var(--primary2);" class="project-borders top-border"></div>
+      <div class="section-title project-title project-title-hidden" data-aos="flip-down" data-aos-offset="200">
+        <p>RECENT PROJECTS</p>
+      </div>
+      <div class="project-content-wrapper">
 
-        <div class="project-thumbnails-div reveal-project-img">
+        <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="200">
           <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
         </div>
-        <p>
-           A financial organizer that catalogs, times, and notifies users of important subscription dates.
-           *Find this extension <a class="chromestore-link" href="#"><strong>here</strong></a> in the Chromestore*
-        </p>
-        <div class="project-btns-wrapper">
-          <div class="project-btns source-code-btn">
-            <a class="source-link" href="#">Source Code</a>
+
+        <div class="project-text-div" data-aos="fade-right" data-aos-offset="200">
+          <h3>Google Extension: Subscription Satelite</h3>
+          <h4>Javascript, CSS3, HTML5, JQuery</h4>
+
+          <div class="project-thumbnails-div reveal-project-img">
+            <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
           </div>
-          <div class="project-btns live-site-btn">
-            <a href="#">Live Site</a>
+          <p>
+            A financial organizer that catalogs, times, and notifies users of important subscription dates.
+            *Find this extension <a class="chromestore-link" href="#"><strong>here</strong></a> in the Chromestore*
+          </p>
+          <div class="project-btns-wrapper">
+            <div class="project-btns source-code-btn">
+              <a class="source-link" href="#">Source Code</a>
+            </div>
+            <div class="project-btns live-site-btn">
+              <a href="#">Live Site</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div style="background-color: var(--primary3);" class="project-borders"></div>
+      <div style="background-color: var(--primary3);" class="project-borders"></div>
 
-    <!-- Second Project -->
-    <div class="project-content-wrapper project-content-mid">
+      <!-- Second Project -->
+      <div class="project-content-wrapper project-content-mid">
 
         <div class="project-text-div" data-aos="fade-left" data-aos-offset="250">
-        <h3>Cycle Hostel: Cyclist Travel Website</h3>
-        <h4>Javascript, CSS3, HTML5, JQuery, Node.js</h4>
-        <div class="project-thumbnails-div reveal-project-img">
+          <h3>Cycle Hostel: Cyclist Travel Website</h3>
+          <h4>Javascript, CSS3, HTML5, JQuery, Node.js</h4>
+          <div class="project-thumbnails-div reveal-project-img">
+            <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+          </div>
+          <p>
+            A full-feature travel site with mobile-responsive layout, user-friendly design, landing page, booking platform, pricing page, and speed optimized features.
+          </p>
+          <div class="project-btns-wrapper">
+            <div class="project-btns source-code-btn">
+              <a href="#">Source Code</a>
+            </div>
+            <div class="project-btns live-site-btn">
+              <a href="#">Live Site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-thumbnails-div hide-project-img" data-aos="fade-right" data-aos-offset="250">
           <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
         </div>
-        <p>
-          A full-feature travel site with mobile-responsive layout, user-friendly design, landing page, booking platform, pricing page,  and speed optimized features.
-        </p>
-        <div class="project-btns-wrapper">
-          <div class="project-btns source-code-btn">
-            <a href="#">Source Code</a>
-          </div>
-          <div class="project-btns live-site-btn">
-            <a href="#">Live Site</a>
-          </div>
-        </div>
+
+
       </div>
 
-      <div class="project-thumbnails-div hide-project-img" data-aos="fade-right" data-aos-offset="250">
-        <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
-      </div>
+      <!-- Last Project -->
+      <div style="background-color: var(--primary1);" class="project-borders"></div>
+      <div class="project-content-wrapper">
 
 
-    </div>
-
-    <!-- Last Project -->
-    <div style="background-color: var(--primary1);" class="project-borders"></div>
-    <div class="project-content-wrapper">
-
-
-      <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="250">
-        <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
-      </div>
-
-      <div class="project-text-div" data-aos="fade-right" data-aos-offset="250">
-        <h3>Name of Project</h3>
-        <h4>Tech Stack Used for Project</h4>
-
-        <div class="project-thumbnails-div reveal-project-img">
+        <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="250">
           <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem debitis perspiciatis quos quibusdam, illum fugit nulla expedita maiores. Aperiam, ab quis alias incidunt possimus quibusdam minus accusamus fuga. Quidem, quisquam.
-        </p>
-        <div class="project-btns-wrapper">
-          <div class="project-btns source-code-btn">
-            <a href="#">Source Code</a>
+
+        <div class="project-text-div" data-aos="fade-right" data-aos-offset="250">
+          <h3>Name of Project</h3>
+          <h4>Tech Stack Used for Project</h4>
+
+          <div class="project-thumbnails-div reveal-project-img">
+            <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
           </div>
-          <div class="project-btns live-site-btn">
-            <a href="#">Live Site</a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem debitis perspiciatis quos quibusdam, illum fugit nulla expedita maiores. Aperiam, ab quis alias incidunt possimus quibusdam minus accusamus fuga. Quidem, quisquam.
+          </p>
+          <div class="project-btns-wrapper">
+            <div class="project-btns source-code-btn">
+              <a href="#">Source Code</a>
+            </div>
+            <div class="project-btns live-site-btn">
+              <a href="#">Live Site</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="project-btns github-btn" data-aos="fadeUp" data-aos-delay="0" data-aos-offset="100">
-      <a href="https://github.com/nuka-coder" target="_blank">Check Out More on My</a>
-      <i class="fab fa-github"></i>
-    </div>
+      <div class="project-btns github-btn" data-aos="fadeUp" data-aos-delay="0" data-aos-offset="100">
+        <a href="https://github.com/nuka-coder" target="_blank">Check Out More on My</a>
+        <i class="fab fa-github"></i>
+      </div>
+
+
+
+    </section>
+
+    <!-- CTA Section -->
+
+    <section id="CTA" class="cta">
+      <div class="custom-shape-divider-top-1645316245">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <div class="cta-content">
+        <img class="cta-logo" src="images/logo-fff.png" alt="Light Logo" data-aos="fade-in" data-aos-duration="5000" data-aos-once="true">
+
+        <h1 class="cta-heading" data-aos="fade-in" data-aos-delay="250" data-aos-duration="5000" data-aos-once="true">A Catchy Call to Action Phrase</h1>
+        <h2 data-aos="fade-in" data-aos-delay="500" data-aos-duration="5000" data-aos-once="true">interested in working together? <br> let's start with a chat...</h2>
+
+        <h1 data-aos="fade-in" data-aos-delay="500" data-aos-duration="5000" data-aos-once="true" data-aos-offset="50" class="cta-subheading">Get Started <a href="contact.html">HERE</a></h1>
+
+      </div>
+
+
+      <div class="footer-social-div">
+        <div class="footer-social-tab">
+          <p> Visit. </p>
+          <p> Follow. </p>
+          <p> Share.</p>
+        </div>
+        <a href="https://www.linkedin.com/in/brittany-j-7391b5231/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/nuka_coder" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/nuka-coder" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/houdinibeanie" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://dev.to/nuka_coder" target="_blank"><i class="fab fa-dev"></i></a>
+      </div>
+
+
+    </section>
 
 
 
   </section>
 
-  <!-- CTA Section -->
 
-  <section id="CTA" class="cta">
-    <div class="custom-shape-divider-top-1645316245">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" class="shape-fill"></path>
-    </svg>
-</div>
 
-    <img class="cta-logo" src="images/logo-fff.png" alt="Light Logo">
-
-    <h1 class="cta-heading">A Catchy Call to Action Phrase</h1>
-    <h2>interested in working together? <br> let's start with a chat...</h2>
-
-    <h1 class="cta-subheading">Get Started <a href="#">HERE</a></h1>
-
-    <div class="footer-social-div">
-    <div class="footer-social-tab">
-      <p>Visit. </p>
-      <p> Follow. </p>
-      <p> Share.</p>
-    </div>
-    <a href="https://www.linkedin.com/in/brittany-j-7391b5231/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/nuka_coder" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://github.com/nuka-coder" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://instagram.com/houdinibeanie" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://dev.to/nuka_coder" target="_blank"><i class="fab fa-dev"></i></a>
-    </div>
-  </section>
-</section>
   <!-- Attribution Credits -->
   <a style="display: none;" href="https://www.freepik.com/vectors/icon">Icon vector created by rawpixel.com - www.freepik.com</a>
   <a style="display: none;" href='https://www.freepik.com/vectors/technology'>Technology vector created by rawpixel.com - www.freepik.com</a>
@@ -395,12 +413,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    offset: 200,
-    duration: 1000
-  });
-</script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+      mirror: false
+    });
+  </script>
 
 
 </body>
