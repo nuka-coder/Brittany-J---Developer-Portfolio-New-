@@ -27,6 +27,16 @@ body {
   position: relative;
 }
 
+button {
+  border: none;
+  border-radius: 5px;
+  color: var(--base3);
+  background-color: var(--base1);
+  font-family: Raleway, monospace;
+  font-size: 1em;
+  padding: .5em 1em;
+}
+
 h1 {
   font-family: american_captainregular, monospace;
   font-size: 4rem;
@@ -39,6 +49,16 @@ h2, h3, h4 {
 hr {
   display: inline-block;
   width: 50%;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  border: 1px solid var(--base1);
+  margin: 0 0 1em;
+  padding: 1em 1em;
+  width: 60%;
 }
 
 a {
@@ -295,7 +315,7 @@ p {
   z-index: 100;
 }
 
-.hamburger-ingredients-div a {
+.hamburger-ingredient {
   color: var(--base3);
   font-family: Raleway, monospace;
   font-size: 1.5em;
@@ -303,8 +323,8 @@ p {
   width: 100%;
 }
 
-.hamburger-ingredients-div a:hover {
-  background-color: var(--base3);
+.hamburger-ingredient:hover {
+  background-color: var(--primary1);
   color: var(--base1);
   cursor: pointer;
   font-weight: 700;
@@ -1044,6 +1064,113 @@ Javascript */
   padding: 0;
 }
 
+/* Contact Page */
+
+.contact-page-section {
+  background-color: var(--base3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  animation-name: fade-in;
+  animation-duration: 1000ms;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-logo-div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 1.5em 0 2em;
+}
+
+.contact-logo {
+  height: auto;
+  width: 10em;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form label {
+  font-family: Raleway, monospace;
+}
+
+#submit-btn {
+  border: none;
+  border-radius: 5px;
+  color: var(--base3);
+  cursor: pointer;
+  background-color: var(--base1);
+  font-family: Raleway, monospace;
+  font-size: 1em;
+  padding: .5em 1em;
+  width: 5em;
+}
+
+.contact-footer {
+  background-color: var(--base1);
+}
+
+.contact-footer i:hover {
+  color: var(--base2);
+}
+
+.contact-footer i:active {
+  color: var(--primary1);
+}
+
+.contact-footer-tab {
+  background-color: var(--base1);
+  border: 3px solid var(--base3);
+}
+
+/* Thank You Page */
+
+.thanks-page-section {
+  animation: none;
+}
+
+.thankyou-div {
+  text-align: center;
+  animation-name: fade-in;
+  animation-duration: 1000ms;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.thankyou-div h1 {
+  color: var(--base1);
+  letter-spacing: 3px;
+}
+
+.thankyou-div h3 {
+  color: var(--base1);
+}
+
+.thankyou-div h6 {
+  color: var(--primary2);
+  font-family: Raleway, monospace;
+  font-size: 1rem;
+}
+
+
 /* Media Queries */
 @media only screen and (min-width: 1700px) {
   .header-blog {
@@ -1346,8 +1473,6 @@ Javascript */
   .skill-image-adobe {
     height: 3em;
   }
-
-  .github-btn {}
 }
 
 @media only screen and (max-width: 430px) {

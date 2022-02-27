@@ -32,6 +32,7 @@ var elementPosition = $('#Nav-Section').offset();
 $(window).scroll(function(){
         if($(window).scrollTop() > elementPosition.top){
               $('#Nav-Section').css('position','fixed');
+              $('#Nav-Section').css('top','8%');
         } else {
             $('#Nav-Section').css('position','absolute');
         }
