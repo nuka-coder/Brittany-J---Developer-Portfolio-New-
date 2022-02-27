@@ -16,6 +16,8 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
@@ -24,13 +26,15 @@
 
 </head>
 
-<body class="body" onload="pageLoading()">
+<body class="body">
+
+  <!-- onload="pageLoading()" -->
 
 <!-- Intro Section -->
-  <div id="loading" class="loading-div">
+  <!-- <div id="loading" class="loading-div">
     <img class="loading-logo" src="images/transparent-logo-white.png" alt="Brittany J Logo, Transparent Lite">
     <div class="loader"></div>
-  </div>
+  </div> -->
 
   <!-- Landing Section -->
 
@@ -150,11 +154,11 @@
   <section id="About" class="about-section">
     <div class="about-content-div">
 
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-left" data-aos-delay="500" data-aos-duration="2000" >
         <p>ABOUT ME</p>
       </div>
 
-      <div class="about-content about1">
+      <div class="about-content about1" data-aos="fade-left">
         <img class="about-imgs" src="images/profile-img.png" alt="Profile Image">
         <h5>Who Am I?</h5>
         <div>
@@ -166,7 +170,7 @@
         </div> -->
       </div>
 
-      <div class="about-content about2">
+      <div class="about-content about2" data-aos="fade-in">
         <img class="about-imgs" src="images/chess.jpg" alt="Profile Image">
         <h5>Interests</h5>
         <div>
@@ -175,7 +179,7 @@
         </div>
       </div>
 
-      <div class="about-content about3">
+      <div class="about-content about3" data-aos="fade-right">
         <img class="about-imgs" src="images/laptop.jpg" alt="Profile Image">
         <h5>Soft Skills</h5>
         <div>
@@ -189,12 +193,12 @@
 
   <!-- Skills Section -->
   <section id="Skills" class="skills-section">
-    <div class="section-title skills-section-title">
+    <div class="section-title skills-section-title" data-aos="fade-left">
       <p>SOFTWARE AND TOOLS</p>
     </div>
     <!-- Desktop Skills Section -->
     <div class="desktop-skills-content">
-      <div class="skills-row">
+      <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
         <i class="fab fa-js-square yellow-skill"></i>
         <i class="fab fa-node yellow-skill"></i>
         <i class="fab fa-html5 green-skill"></i>
@@ -202,7 +206,7 @@
         <i class="fab fa-git red-skill"></i>
         <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
       </div>
-      <div class="skills-row">
+      <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
         <i class="fab fa-react yellow-skill"></i>
         <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
         <i class="fas fa-terminal green-skill"></i>
@@ -214,21 +218,21 @@
 
     <!-- Small Screen Skills -->
   <section class="responsive-skills-section">
-    <div class="skills-row">
+    <div class="skills-row" data-aos="fade-in" data-aos-delay="250" data-aos-easing="ease-in-out">
       <i class="fab fa-js-square yellow-skill"></i>
       <i class="fab fa-node yellow-skill"></i>
       <i class="fab fa-react yellow-skill"></i>
       <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
     </div>
 
-    <div class="skills-row">
+    <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="750">
       <i class="fab fa-html5 green-skill"></i>
       <i class="fab fa-css3-alt green-skill"></i>
       <i class="fas fa-terminal green-skill"></i>
       <i class="fab fa-bootstrap green-skill"></i>
     </div>
 
-    <div class="skills-row">
+    <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="1250">
       <i class="fab fa-git red-skill"></i>
       <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
       <i class="fab fa-github red-skill"></i>
@@ -242,7 +246,7 @@
 
   <!-- Projects Section -->
   <section id="Projects" class="projects-section">
-    <div class="section-title project-title visible-project-title">
+    <div class="section-title project-title visible-project-title" data-aos="fade-left" data-aos-offset="200">
       <p>RECENT PROJECTS</p>
     </div>
 
@@ -253,11 +257,11 @@
     </div>
     <div class="project-content-wrapper">
 
-      <div class="project-thumbnails-div hide-project-img">
+      <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="200">
         <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
       </div>
 
-      <div class="project-text-div">
+      <div class="project-text-div" data-aos="fade-right" data-aos-offset="200">
         <h3>Google Extension: Subscription Satelite</h3>
         <h4>Javascript, CSS3, HTML5, JQuery</h4>
 
@@ -284,7 +288,7 @@
     <!-- Second Project -->
     <div class="project-content-wrapper project-content-mid">
 
-        <div class="project-text-div">
+        <div class="project-text-div" data-aos="fade-left" data-aos-offset="250">
         <h3>Cycle Hostel: Cyclist Travel Website</h3>
         <h4>Javascript, CSS3, HTML5, JQuery, Node.js</h4>
         <div class="project-thumbnails-div reveal-project-img">
@@ -303,7 +307,7 @@
         </div>
       </div>
 
-      <div class="project-thumbnails-div hide-project-img">
+      <div class="project-thumbnails-div hide-project-img" data-aos="fade-right" data-aos-offset="250">
         <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
       </div>
 
@@ -315,10 +319,11 @@
     <div class="project-content-wrapper">
 
 
-      <div class="project-thumbnails-div hide-project-img">
+      <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="250">
         <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
       </div>
-      <div class="project-text-div">
+
+      <div class="project-text-div" data-aos="fade-right" data-aos-offset="250">
         <h3>Name of Project</h3>
         <h4>Tech Stack Used for Project</h4>
 
@@ -339,7 +344,7 @@
       </div>
     </div>
 
-    <div class="project-btns github-btn">
+    <div class="project-btns github-btn" data-aos="fadeUp" data-aos-delay="0" data-aos-offset="100">
       <a href="https://github.com/nuka-coder" target="_blank">Check Out More on My</a>
       <i class="fab fa-github"></i>
     </div>
@@ -388,6 +393,14 @@
 
   <!-- Jquery Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 1000
+  });
+</script>
 
 
 </body>

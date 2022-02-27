@@ -1,15 +1,15 @@
 
 
 // Revealing page
-var toLoad;
-function pageLoading() {
-  toLoad = setTimeout(showPage, 1000);
-}
-
-function showPage() {
-  $("#loading").css("display", "none");
-  $("#page").fadeIn("slow");
-}
+// var toLoad;
+// function pageLoading() {
+//   toLoad = setTimeout(showPage, 1000);
+// }
+//
+// function showPage() {
+//   $("#loading").css("display", "none");
+//   $("#page").fadeIn("slow");
+// }
 
 
 
