@@ -42,6 +42,7 @@ $(window).scroll(function(){
 
 function assembleBurger() {
   $(".hamburger-ingredients-div").slideToggle();
+  $(".hamburger-menu").css("width", "7.5em");
   fixedHeader();
 }
 
@@ -72,3 +73,33 @@ sourceBtn.hover(function(){
   $(this).css("background-color", "var(--base3)");
   $(this).children('a').css("color", "var(--primary1)");
 });
+
+// Slide effect for Workflow text
+// put this in for loop later because this is redundant code
+
+$("#about-list-title1").on("click", function() {
+  $("#about-list-title1").addClass("title-toggle");
+  $("#about-list-title2").removeClass("title-toggle");
+  $("#about-list-title3").removeClass("title-toggle");
+  $(".about-list-p1").slideToggle()
+  $(".about-list-p2").slideUp();
+  $(".about-list-p3").slideUp();
+})
+
+$("#about-list-title2").on("click", function() {
+  $("#about-list-title2").addClass("title-toggle");
+  $("#about-list-title1").removeClass("title-toggle");
+  $("#about-list-title3").removeClass("title-toggle");
+  $(".about-list-p2").slideToggle();
+  $(".about-list-p1").slideUp();
+  $(".about-list-p3").slideUp();
+})
+
+$("#about-list-title3").on("click", function() {
+  $("#about-list-title3").addClass("title-toggle");
+  $("#about-list-title1").removeClass("title-toggle");
+  $("#about-list-title2").removeClass("title-toggle");
+  $(".about-list-p3").slideToggle();
+  $(".about-list-p1").slideUp();
+  $(".about-list-p2").slideUp();
+})
