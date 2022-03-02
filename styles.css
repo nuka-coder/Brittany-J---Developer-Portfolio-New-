@@ -311,7 +311,7 @@ p {
   top: 3rem;
   left: 0;
   height: 80vh;
-  width: 25vw;
+  width: 40vw;
   z-index: 100;
 }
 
@@ -324,7 +324,7 @@ p {
 }
 
 .hamburger-ingredient:hover {
-  background-color: var(--primary1);
+  background-color: var(--base3);
   color: var(--base1);
   cursor: pointer;
   font-weight: 700;
@@ -642,7 +642,6 @@ Javascript */
 
 /* About Section */
 .about-content-div {
-  align-items: center;
   display: flex;
   justify-content: space-around;
   margin-top: 1em;
@@ -670,10 +669,10 @@ Javascript */
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 10em 3em;
+  /* create equal width of all flex divs */
+  flex: 1;
+  padding: 8em 2em;
   text-align: center;
-  width: 33vw;
 }
 
 .about1 {
@@ -690,8 +689,9 @@ Javascript */
 
 .about-text {
   font-family: Raleway, monospace;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 300;
+  margin: .5em 0;
 }
 
 .about-content h5 {
@@ -717,6 +717,94 @@ Javascript */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.about-twitter-link {
+  color: var(--base3);
+  font-weight: bold;
+  margin: 0 .25em;
+  text-decoration: none;
+}
+
+.about-twitter-link:hover,
+.about-twitter-link:active {
+  color: var(--primary2);
+}
+
+/* Interests Section */
+.interests-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.interests-items {
+  font-family: Raleway, monospace;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: .5em 0;
+}
+
+/* Workflow Section */
+.ordered-list {
+  padding: 0 .25em;
+}
+
+.list-div {
+  position: relative;
+}
+
+.about-list-title {
+  background-color: var(--primary3);
+  box-shadow: 5px 3px 5px var(--base1);
+  border-radius: 5px;
+  color: var(--base3);
+  cursor: pointer;
+  font-family: Raleway, monospace;
+  font-size: 1.15em;
+  font-weight: 300;
+  margin: .5em;
+  opacity: .8;
+  padding: .3em 3em;
+  text-align: center;
+  transition: background-color, color, opacity;
+  transition-duration: 800ms;
+}
+
+.title-toggle {
+  background-color: var(--primary1);
+  box-shadow: 5px 3px 5px rgba(163, 53, 19, .5);
+  color: var(--base3);
+  opacity: 1;
+}
+
+.about-list-title:hover {
+  background-color: var(--primary1);
+  box-shadow: 5px 3px 5px rgba(163, 53, 19, .5);
+  color: var(--base3);
+  opacity: 1;
+}
+
+#about-list-p1 {
+  display: inherit;
+}
+
+.about-list-p1,
+.about-list-p2,
+.about-list-p3 {
+  background-color: var(--base3);
+  border-radius: 10px;
+  color: var(--base1);
+  display: none;
+  font-family: Raleway, monospace;
+  font-size: 14px;
+  margin: .5em;
+  padding: 1em;
+}
+
+.about-overflow {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
 /* Text Decoding */
 .decode1 {
   display: inline-block !important;
@@ -736,6 +824,16 @@ Javascript */
 
 .binary {
   font-size: 1em;
+}
+
+/* About Sliders */
+.novel-items {
+  height: auto;
+  width: 100px;
+}
+
+.interest-slider {
+  display: none;
 }
 
 /* Software and Tools Section */
@@ -899,11 +997,13 @@ Javascript */
 }
 
 .project-btns:hover {
-  box-shadow: 2px 5px 8px var(--base2);
+  box-shadow: 2px 5px 8px var(--base1);
 }
 
 .project-btns:active {
-  box-shadow: 5px .5rem .25rem var(--base1);
+  background-color: var(--base1);
+  color: var(--base3);
+  box-shadow: 5px .5rem .25rem var(--base2);
 }
 
 .source-code-btn {
@@ -916,10 +1016,6 @@ Javascript */
   color: var(--primary1);
 }
 
-/*
-.source-code-btn:hover {
-  background-color: var(--primary1);
-} */
 .live-site-btn a {
   color: var(--base3);
 }
@@ -984,9 +1080,9 @@ Javascript */
 
 .cta-heading,
 .cta-subheading {
-  color: var(--base3);
+  color: var(--secondary1);
   font-family: american_captainregular;
-  font-size: 5rem;
+  font-size: 4.5rem;
   letter-spacing: 5px;
   line-height: 1;
   margin: 0;
@@ -994,19 +1090,20 @@ Javascript */
 }
 
 .cta-subheading {
+  color: var(--secondary1);
   font-size: 2.5em;
   margin-bottom: 2em;
 }
 
 .cta-subheading a {
-  color: var(--primary1);
+  color: var(--primary2);
   font-family: american_captainregular;
   text-decoration: underline;
   text-shadow: none;
 }
 
 .cta-subheading a:hover {
-  color: var(--primary2);
+  color: var(--primary1);
 }
 
 .cta h2 {
@@ -1021,7 +1118,7 @@ Javascript */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 2rem 0 1rem;
   padding: .5em 0;
   position: relative;
   text-align: center;
@@ -1064,6 +1161,26 @@ Javascript */
   padding: 0;
 }
 
+/* Copyright */
+
+.copyright-div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+}
+
+.copyright-div p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.copyright-img {
+  height: auto;
+  width: 40px;
+}
+
 /* Contact Page */
 
 .contact-page-section {
@@ -1086,6 +1203,7 @@ Javascript */
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1140,6 +1258,15 @@ Javascript */
   border: 3px solid var(--base3);
 }
 
+.contact-copyright-p {
+  color: var(--base1);
+}
+
+.contact-copyright-img {
+  height: auto;
+  width: 28px;
+}
+
 /* Thank You Page */
 
 .thanks-page-section {
@@ -1169,7 +1296,6 @@ Javascript */
   font-family: Raleway, monospace;
   font-size: 1rem;
 }
-
 
 /* Media Queries */
 @media only screen and (min-width: 1700px) {
@@ -1411,6 +1537,21 @@ Javascript */
 
   .svg-arrow .shape-fill {
     display: none;
+  }
+
+  .about-content {
+    padding: 2em 3em;
+  }
+
+  /* changing visibility of about sections for dekstop
+  and mobile to disable animations, there is a more dry way
+  to do this */
+  .desktop-about-content {
+    display: none;
+  }
+
+  .mobile-about-content {
+    display: flex !important;
   }
 
   .skills-section,
