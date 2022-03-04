@@ -26,19 +26,17 @@
 
 </head>
 
-<body class="body">
-
-  <!-- onload="pageLoading()" -->
+<body class="body" onload="pageLoading()">
 
   <!-- Intro Section -->
-  <!-- <div id="loading" class="loading-div">
+  <div id="loading" class="loading-div">
     <img class="loading-logo" src="images/transparent-logo-white.png" alt="Brittany J Logo, Transparent Lite">
     <div class="loader"></div>
-  </div> -->
+  </div>
 
   <!-- Landing Section -->
 
-  <section id="page" class="loading-overlay">
+  <section id="page" class="page-overlay">
     <section id="Landing" class="landing-section">
 
       <div class="no-flex">
@@ -163,7 +161,7 @@
 
       <div class="about-content-div desktop-about-content">
 
-        <div class="section-title" data-aos="flip-down" data-aos-delay="500" data-aos-duration="2000">
+        <div class="section-title" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
           <p>ABOUT ME</p>
         </div>
 
@@ -267,9 +265,7 @@
             </p>
             <p class="about-text">Interested in my story? Follow me on <a href="https://twitter.com/nuka_coder" target="_blank"><i class="fab fa-twitter about-twitter-link"></i></a>.</p>
           </div>
-          <!-- <div class=" about-text binary">
-          <p class="about-text">01001001 00100000 01101100 01101111 01110110 01100101 00100000 01110010 01100001 01101101 01100101 01101110 00101100 00100000 01100011 01101111 01100100 </p>
-        </div> -->
+
         </div>
 
         <div class="about-content about2">
@@ -494,12 +490,12 @@
       </div>
 
       <div class="cta-content">
-        <img class="cta-logo" src="images/logo-fff.png" alt="Light Logo" data-aos="fade-in" data-aos-duration="5000" data-aos-once="true">
+        <img class="cta-logo" src="images/logo-fff.png" alt="Light Logo">
 
-        <h1 class="cta-heading" data-aos="fade-in" data-aos-delay="250" data-aos-duration="5000" data-aos-once="true">Let's make your next <br> site unforgettable</h1>
-        <h2 data-aos="fade-in" data-aos-delay="0" data-aos-duration="5000" data-aos-once="true">interested in working together? <br> we'll start with a chat...</h2>
+        <h1 class="cta-heading">Let's make your next <br> site unforgettable</h1>
+        <h2>interested in working together? <br> we'll start with a chat...</h2>
 
-        <h1 data-aos="fade-in" data-aos-delay="500" data-aos-duration="5000" data-aos-once="true" data-aos-offset="50" class="cta-subheading">Get Started <a href="contact.html">HERE</a></h1>
+        <h1 class="cta-subheading">Get Started <a href="contact.html">HERE</a></h1>
 
       </div>
 
@@ -552,7 +548,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset: 200,
+      offset: 100,
       duration: 1000,
       mirror: false
     });

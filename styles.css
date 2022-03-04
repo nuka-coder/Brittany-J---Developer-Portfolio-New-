@@ -94,10 +94,8 @@ p {
   height: auto;
   width: 50vw;
   object-fit: contain;
-  /* position: absolute;
-  top: 20%; */
   animation-name: loading;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;
@@ -142,9 +140,10 @@ p {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 } */
+
 /* Overlay */
-.loading-overlay {
-  display: inherit;
+.page-overlay {
+  display: none;
   /* display: none; for loading screen */
 }
 
@@ -192,7 +191,7 @@ p {
 
 .scrolling-text {
   align-items: center;
-  background-color: var(--secondary1);
+  background-color: var(--primary2);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -206,7 +205,7 @@ p {
 }
 
 .header-tagline {
-  color: var(--base1);
+  color: var(--base3);
   font-family: Raleway, sans-serif;
   font-size: 1.17em;
   font-weight: 800;
@@ -234,7 +233,7 @@ p {
   display: flex;
   height: 3rem;
   justify-content: center;
-  width: 9.5em;
+  width: 10.8rem;
   margin: 0 1rem 1rem 0;
 }
 
@@ -245,7 +244,7 @@ p {
 
 .header-blog {
   background-color: var(--secondary1);
-  border: 3px solid var(--base1);
+  border: 1px solid var(--base1);
   padding: 10px;
   position: absolute;
   text-align: center;
@@ -278,7 +277,7 @@ p {
 /* Hamburger Menu */
 .hamburger-menu {
   align-items: center;
-  background-color: var(--secondary1);
+  background-color: var(--primary2);
   display: none;
   height: 3rem;
   justify-content: center;
@@ -359,7 +358,7 @@ p {
   background-color: var(--primary1);
   display: inline-flex;
   padding: .5em;
-  width: 7em;
+  width: 7rem;
 }
 
 .issue-number {
@@ -522,10 +521,6 @@ Javascript */
   width: fit-content;
 }
 
-.headings-content {
-  /* margin: -25% 0 auto; */
-}
-
 .name-title {
   color: var(--primary3);
   font-family: american_captainregular;
@@ -540,7 +535,6 @@ Javascript */
   font-family: Raleway, monospace;
   font-size: 2rem;
   font-weight: 700;
-  margin: 0 .5em;
   text-align: center
 }
 
@@ -761,7 +755,6 @@ Javascript */
   font-size: 1.15em;
   font-weight: 300;
   margin: .5em;
-  opacity: .8;
   padding: .3em 3em;
   text-align: center;
   transition: background-color, color, opacity;
@@ -772,14 +765,12 @@ Javascript */
   background-color: var(--primary1);
   box-shadow: 5px 3px 5px rgba(163, 53, 19, .5);
   color: var(--base3);
-  opacity: 1;
 }
 
 .about-list-title:hover {
   background-color: var(--primary1);
   box-shadow: 5px 3px 5px rgba(163, 53, 19, .5);
   color: var(--base3);
-  opacity: 1;
 }
 
 #about-list-p1 {
@@ -1339,7 +1330,7 @@ Javascript */
   }
 
   .top-header {
-    background-color: var(--secondary1);
+    background-color: var(--primary2);
     height: 3em;
     margin-bottom: 1rem;
   }
