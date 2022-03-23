@@ -27,6 +27,42 @@
 </head>
 
 <body class="body" onload="pageLoading()">
+  <!-- Modals -->
+  <div class="modal modal1">
+    <img class="project-modal-imgs" src="images/ch-screengrab.jpg" alt="Cycle Hostel Modal">
+  </div>
+  <div class="modal modal2">
+    <img class="project-modal-imgs" src="images/uiUx-screengrab.jpg" alt="Ui/Ux Modal">
+  </div>
+  <div class="modal modal3">
+    <img class="project-modal-imgs" src="images/bareque-screengrab.jpg" alt="Bareque Cocina Modal">
+  </div>
+
+        <!-- Design Modals -->
+
+  <div class="modal design-modal1">
+    <div class="design-modal-div">
+        <img class="design-modal-imgs" src="images/developer-site-outline.jpg" alt="Style Guide 1">
+        <p>Style Guide for my Portfolio Website.</p>
+        <p>Constructed before beginning development.</p>
+    </div>
+  </div>
+
+  <div class="modal design-modal2">
+    <div class="design-modal-div">
+      <img class="design-modal-imgs" src="images/menu.jpg" alt="Menu Mockup">
+      <p>Mockup Menu Page for Bareque Cocina Restaurant.</p>
+    </div>
+  </div>
+
+  <div class="modal design-modal3">
+    <div class="design-modal-div">
+      <img class="design-modal-imgs" src="images/about-wireframe.jpg" alt="About Page Lo-Fidelity Mockup">
+      <p>About page wireframe. Part of a series made for freelance client.</p>
+    </div>
+  </div>
+  <!-- End Modals -->
+
 
   <!-- Intro Section -->
   <div id="loading" class="loading-div">
@@ -34,9 +70,9 @@
     <div class="loader"></div>
   </div>
 
-  <!-- Landing Section -->
-
   <section id="page" class="page-overlay">
+
+    <!-- Landing Section -->
     <section id="Landing" class="landing-section">
 
       <div class="no-flex">
@@ -81,9 +117,7 @@
 
       </div>
       <section id="Nav-Section" class="nav-section">
-        <div id="Reveal-Btn" onclick="revealNavbar()" class="reveal-btn">
-          <i class="fas fa-angle-double-right"></i>
-        </div>
+
         <nav id="Navbar" class="nav-bar">
           <div class="nav-containers about-nav">
             <a href="#About">
@@ -117,6 +151,10 @@
           </div>
 
         </nav>
+
+        <div id="Reveal-Btn" onclick="revealNavbar()" class="reveal-btn">
+          <i class="fas fa-angle-double-right"></i>
+        </div>
 
       </section>
 
@@ -161,13 +199,13 @@
 
       <div class="about-content-div desktop-about-content">
 
-        <div class="section-title" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
+        <div class="section-title" data-aos="flip-down" data-aos-delay="1000ms" data-aos-duration="2000ms">
           <p>ABOUT ME</p>
         </div>
 
         <div class="about-content about1" data-aos="fade-left">
           <div>
-            <img class="about-imgs" src="images/profile-img.png" alt="Profile Image">
+            <img title="Oh wow, I'm a cartoon!" class="about-imgs" src="images/profile-img.png" alt="Profile Image">
             <h5>Who Am I?</h5>
           </div>
           <div>
@@ -181,13 +219,11 @@
               and decided to self-teach myself web development.
             </p>
 
-            <p class="about-text"> When I'm not hunched over my computer furiously typing code, or trying to fix a bug, I'm usually reading comics or experimenting with ramen recipes.
+            <p class="about-text"> When I'm not hunched over my computer furiously typing code, or trying to fix a bug, I'm usually enjoying a good book or experimenting with ramen recipes.
             </p>
             <p class="about-text">Interested in my story? Follow me on <a href="https://twitter.com/nuka_coder" target="_blank"><i class="fab fa-twitter about-twitter-link"></i></a>.</p>
           </div>
-          <!-- <div class=" about-text binary">
-          <p class="about-text">01001001 00100000 01101100 01101111 01110110 01100101 00100000 01110010 01100001 01101101 01100101 01101110 00101100 00100000 01100011 01101111 01100100 </p>
-        </div> -->
+
         </div>
 
         <div class="about-content about2" data-aos="fade-in">
@@ -196,15 +232,11 @@
             <h5>Interests</h5>
           </div>
           <div class="interests-div">
-            <p class="interests-items">Chess</p>
+            <p class="interests-items">UI/UX Design</p>
+            <p class="interests-items">Technical Writing</p>
             <p class="interests-items">French Language</p>
-            <p class="interests-items">Graphic Novels</p>
-            <div class="interest-slider">
-              <img src="images/i am a hero.jpg" alt="i am a hero manga" class="novel-items">
-              <img src="images/i am a hero.jpg" alt="" class="novel-items">
-              <p style="font-size: 12px; color: var(--base1); font-weight: 500;">What I'm currently reading</p>
-            </div>
-            <p class="interests-items">Photography</p>
+            <p class="interests-items">Chess</p>
+            <p class="interests-items">Comics and Literary Fiction</p>
             <p class="interests-items">Tabletop Board Games</p>
           </div>
         </div>
@@ -225,6 +257,11 @@
 
               <p class="about-list-p2">My design process begins with completing a site map to outline the general flow of the project pages. Next the wireframing begins, followed by a mockup, style guide, and prototype all created using Adobe Xd.
                 Feedback will be gathered from the client, and once edits are made the design of the project will be finished.</p>
+                <div style="display: none;" class="design-examples-mobile about-list-p2">
+                  <p class="design-links design1">Example Design 1</p>
+                  <p class="design-links design2">Example Design 2</p>
+                  <p class="design-links design3">Example Design 3</p>
+                </div>
             </div>
 
             <div class="list-div">
@@ -277,11 +314,7 @@
             <p class="interests-items">Chess</p>
             <p class="interests-items">French Language</p>
             <p class="interests-items">Graphic Novels</p>
-            <div class="interest-slider">
-              <img src="images/i am a hero.jpg" alt="i am a hero manga" class="novel-items">
-              <img src="images/i am a hero.jpg" alt="" class="novel-items">
-              <p style="font-size: 12px; color: var(--base1); font-weight: 500;">What I'm currently reading</p>
-            </div>
+
             <p class="interests-items">Photography</p>
             <p class="interests-items">Tabletop Board Games</p>
           </div>
@@ -292,22 +325,30 @@
           <h5>My Workflow</h5>
           <div class="about-overflow">
             <div class="list-div">
-              <p id="about-list-title1" class="about-list-title"> Planning and Preparation </p>
+              <p class="about-list-title" onclick="revealWorkflowText1()"> Planning and Preparation </p>
 
-              <p id="about-list-p1" class="about-list-p1">In the preliminary phase of the project I discuss the goals and vision for the project with the client to clearly understand what they want and what the scope for the assignment will be. A discovery checklist will be completed so that I can deliver a product everyone will be satisfied with.</p>
+              <p class="about-list-p1 workflow-text1">In the preliminary phase of the project I discuss the goals and vision for the project with the client to clearly understand what they want and what the scope for the assignment will be. A
+                discovery checklist will be completed so that I can deliver a product everyone will be satisfied with.</p>
             </div>
 
             <div class="list-div">
-              <p id="about-list-title2" class="about-list-title">Design</p>
+              <p class="about-list-title" onclick="revealWorkflowText2()">Design</p>
 
-              <p class="about-list-p2">My design process begins with completing a site map to outline the general flow of the project pages. Next the wireframing begins, followed by a mockup, style guide, and prototype all created using Adobe Xd.
-                Feedback will be gathered from the client, and once edits are made the design of the project will be finished.</p>
+              <p class="about-list-p2 workflow-text2">My design process begins with completing a site map to outline the general flow of the project pages. Next the wireframing begins, followed by a mockup, style guide, and prototype all created using Adobe Xd.
+                Feedback will be gathered from the client, and once edits are made the design of the project will be finished.
+              </p>
+
+              <div style="display: none;" class="design-examples-mobile about-list-p2">
+                <p class="design-links design1">Example Design 1</p>
+                <p class="design-links design2">Example Design 2</p>
+                <p class="design-links design3">Example Design 3</p>
+              </div>
             </div>
 
             <div class="list-div">
-              <p id="about-list-title3" class="about-list-title">Development</p>
+              <p class="about-list-title" onclick="revealWorkflowText3()">Development</p>
 
-              <p class="about-list-p3">The development phase consists of selecting the appropriate technology stack for the assignment, setting up the environment (including all files and folders, Github for version control, and any libraries or
+              <p class="about-list-p3 workflow-text3">The development phase consists of selecting the appropriate technology stack for the assignment, setting up the environment (including all files and folders, Github for version control, and any libraries or
                 frameworks), then building each page and feature one by one in the IDE. Each page is sent for feedback as it's completed, and a thorough maintenance and performance check is done before and after publishing site.</p>
             </div>
           </div>
@@ -326,20 +367,20 @@
       <!-- Desktop Skills Section -->
       <div class="desktop-skills-content">
         <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
-          <i class="fab fa-js-square yellow-skill"></i>
-          <i class="fab fa-node yellow-skill"></i>
-          <i class="fab fa-html5 green-skill"></i>
-          <i class="fab fa-css3-alt green-skill"></i>
-          <i class="fab fa-git red-skill"></i>
-          <img class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
+          <i title="Javascript" class="fab fa-js-square yellow-skill"></i>
+          <i title="Node.js" class="fab fa-node yellow-skill"></i>
+          <i title="HTML5" class="fab fa-html5 green-skill"></i>
+          <i title="CSS3" class="fab fa-css3-alt green-skill"></i>
+          <i title="Git" class="fab fa-git red-skill"></i>
+          <img title="Adobe Xd" class="skill-image-adobe" src="images/adobe-xd-logo.png" alt="Adobe Xd logo">
         </div>
         <div class="skills-row" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-offset="100">
-          <i class="fab fa-react yellow-skill"></i>
-          <img class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
-          <i class="fas fa-terminal green-skill"></i>
-          <i class="fab fa-bootstrap green-skill"></i>
-          <i class="fab fa-github red-skill"></i>
-          <img class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
+          <i title="React" class="fab fa-react yellow-skill"></i>
+          <img title="jQuery" class="skill-image-jquery" src="images/jquery-logo.png" alt="jquery logo">
+          <i title="Command Line Interface" class="fas fa-terminal green-skill"></i>
+          <i title="Boostrap 5" class="fab fa-bootstrap green-skill"></i>
+          <i title="Github" class="fab fa-github red-skill"></i>
+          <img title="Adobe Photoshop" class="skill-image-adobe" src="images/adobe-photoshop-logo.png" alt="Adobe Photoshop logo">
         </div>
       </div>
 
@@ -373,31 +414,67 @@
 
     <!-- Projects Section -->
     <section id="Projects" class="projects-section">
+
+
       <div class="section-title project-title visible-project-title" data-aos="flip-down" data-aos-offset="200">
         <p>RECENT PROJECTS</p>
       </div>
 
       <!-- First Project -->
-      <div style="background-color: var(--primary2);" class="project-borders top-border"></div>
-      <div class="section-title project-title project-title-hidden" data-aos="flip-down" data-aos-offset="200">
-        <p>RECENT PROJECTS</p>
-      </div>
+      <section>
+        <div class="section-title project-title project-title-hidden" data-aos="flip-down" data-aos-offset="200">
+          <p>RECENT PROJECTS</p>
+        </div>
+        <div style="background-color: var(--primary2);" class="project-borders top-border"></div>
+
+
+        <div class="project-content-wrapper project-content-mid">
+
+          <div class="project-text-div" data-aos="fade-left" data-aos-offset="200">
+            <h3>Cycle Hostel: Cyclist Travel Website</h3>
+            <h4>Javascript, CSS3, HTML5, JQuery</h4>
+            <div class="project-thumbnails-div reveal-project-img" onclick="revealModal1()">
+              <img class="project-thumbnails" src="images/ch-screengrab.jpg" alt="Cycle Hostel Landing page">
+            </div>
+            <p>
+              A full-feature travel site with mobile-responsive layout, user-friendly design, landing page, booking platform, and speed optimized features.
+            </p>
+            <div class="project-btns-wrapper">
+              <div class="project-btns source-code-btn" onclick="openCH()">
+                <a href="https://github.com/nuka-coder/Cycle-Hostel" target="_blank">Source Code</a>
+              </div>
+              <div class="project-btns live-site-btn">
+                <a href="#">Live Site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-thumbnails-div hide-project-img" data-aos="fade-right" data-aos-offset="200" onclick="revealModal1()">
+            <img class="project-thumbnails" src="images/ch-screengrab.jpg"  alt="Cycle Hostel Landing Page">
+          </div>
+        </div>
+        <div style="background-color: var(--primary3);" class="project-borders"></div>
+
+      </section>
+
+      <!-- Second Project -->
+    <section>
+
       <div class="project-content-wrapper">
 
-        <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="200">
+        <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="250" onclick="revealModal2()">
           <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
         </div>
 
-        <div class="project-text-div" data-aos="fade-right" data-aos-offset="200">
+        <div class="project-text-div" data-aos="fade-right" data-aos-offset="250">
           <h3>Google Extension: Subscription Satelite</h3>
           <h4>Javascript, CSS3, HTML5, JQuery</h4>
 
-          <div class="project-thumbnails-div reveal-project-img">
+          <div class="project-thumbnails-div reveal-project-img" onclick="revealModal2()">
             <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
           </div>
           <p>
-            A financial organizer that catalogs, times, and notifies users of important subscription dates.
-            *Find this extension <a class="chromestore-link" href="#"><strong>here</strong></a> in the Chromestore*
+            A financial organizer that archives, times, and reminds users of important subscription dates. Never forget to cancel that pesky free trial, and easily see where your money is going. *Find this extension <a class="chromestore-link" href="#"><strong>here</strong></a> in the Chromestore*
           </p>
           <div class="project-btns-wrapper">
             <div class="project-btns source-code-btn">
@@ -410,59 +487,31 @@
         </div>
       </div>
 
-      <div style="background-color: var(--primary3);" class="project-borders"></div>
+    </section>
 
-      <!-- Second Project -->
-      <div class="project-content-wrapper project-content-mid">
-
-        <div class="project-text-div" data-aos="fade-left" data-aos-offset="250">
-          <h3>Cycle Hostel: Cyclist Travel Website</h3>
-          <h4>Javascript, CSS3, HTML5, JQuery, Node.js</h4>
-          <div class="project-thumbnails-div reveal-project-img">
-            <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
-          </div>
-          <p>
-            A full-feature travel site with mobile-responsive layout, user-friendly design, landing page, booking platform, pricing page, and speed optimized features.
-          </p>
-          <div class="project-btns-wrapper">
-            <div class="project-btns source-code-btn">
-              <a href="#">Source Code</a>
-            </div>
-            <div class="project-btns live-site-btn">
-              <a href="#">Live Site</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-thumbnails-div hide-project-img" data-aos="fade-right" data-aos-offset="250">
-          <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
-        </div>
-
-
-      </div>
 
       <!-- Last Project -->
       <div style="background-color: var(--primary1);" class="project-borders"></div>
       <div class="project-content-wrapper">
 
 
-        <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="250">
-          <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+        <div class="project-thumbnails-div hide-project-img" data-aos="fade-left" data-aos-offset="250" onclick="revealModal3()">
+          <img class="project-thumbnails" src="images/bareque-screengrab.jpg" alt="Bareque Cocina Homepage">
         </div>
 
         <div class="project-text-div" data-aos="fade-right" data-aos-offset="250">
           <h3>Bareque Cocina Restaurant Site</h3>
           <h4>HTML5, CSS3, Javascript, JQuery</h4>
 
-          <div class="project-thumbnails-div reveal-project-img">
-            <img class="project-thumbnails" src="images/placeholder-image.png" alt="placeholder image">
+          <div class="project-thumbnails-div reveal-project-img" onclick="revealModal3()">
+            <img class="project-thumbnails" src="images/bareque-screengrab.jpg" alt="Bareque Cocina restaurant homepage">
           </div>
           <p>
             A collaborative web build on an international 2-person development team for the Colombian restaurant Bareque Cocina. A platform providing key restaurant information to customers, displaying solid brand image, and increasing search rankings as one of few restaurants with an established web presence in Cali Colombia.
           </p>
           <div class="project-btns-wrapper">
-            <div class="project-btns source-code-btn">
-              <a href="#">Source Code</a>
+            <div class="project-btns source-code-btn" onclick="openBareque()">
+              <a href="https://github.com/nuka-coder/Bareque-Cocina-Restaurant-NukaFork" target="_blank">Source Code</a>
             </div>
             <div class="project-btns live-site-btn">
               <a href="#">Live Site</a>
@@ -471,12 +520,10 @@
         </div>
       </div>
 
-      <div class="project-btns github-btn" data-aos="fadeUp" data-aos-delay="0" data-aos-offset="100">
+      <div class="project-btns github-btn" onclick="openGithub()" data-aos="fadeUp" data-aos-delay="0" data-aos-offset="100">
         <a href="https://github.com/nuka-coder" target="_blank">Check Out More on My</a>
         <i class="fab fa-github"></i>
       </div>
-
-
 
     </section>
 
@@ -495,7 +542,7 @@
         <h1 class="cta-heading">Let's make your next <br> site unforgettable</h1>
         <h2>interested in working together? <br> we'll start with a chat...</h2>
 
-        <h1 class="cta-subheading">Get Started <a href="contact.html">HERE</a></h1>
+        <h1 class="cta-subheading">Get Started <a href="contact.html">HERE</a>.</h1>
 
       </div>
 
@@ -518,7 +565,7 @@
           <p>Built and maintained by </p>
         </div>
          <div>
-           <img class="copyright-img" src="images/profile-img.png" alt="Profile photo animated">
+           <img title="Brittany J." class="copyright-img" src="images/profile-img.png" alt="Profile photo animated">
          </div>
          <div>
            <p> 2022 ©</p>
