@@ -1,49 +1,103 @@
 
 
 // Revealing page
-// var toLoad;
-// function pageLoading() {
-//   toLoad = setTimeout(showPage, 1000);
-// }
-//
-// function showPage() {
-//   $("#loading").css("display", "none");
-//   $("#page").fadeIn("slow");
-// }
+var toLoad;
+function pageLoading() {
+  toLoad = setTimeout(showPage, 1000);
+}
 
+function showPage() {
+  $("#loading").css("display", "none");
+  $("#page").css("visibility", "visible");
+}
 
+// Page redirects - Project section
+// Cycle Hostel
+function openCH() {
+  window.open("https://github.com/nuka-coder/Cycle-Hostel");
+}
+// Bareque Cocina
+function openBareque() {
+  window.open("https://github.com/nuka-coder/Bareque-Cocina-Restaurant-NukaFork");
+}
+// Github Button
+function openGithub() {
+  window.open("https://github.com/nuka-coder");
+}
+
+// Modal reveals
+
+function revealModal1() {
+  $(".modal1").css("display", "flex");
+}
+function revealModal2() {
+  $(".modal2").css("display", "flex");
+}
+function revealModal3() {
+  $(".modal3").css("display", "flex");
+}
+
+// Modal close
+  $(".modal").on("click", function() {
+    $(".modal").css("display", "none");
+  });
+
+// Design Modals
+
+$(".design-links").on("click", revealDesign());
+
+function revealDesign() {
+
+  const design1 = $(".design1");
+  const design2 = $(".design2");
+  const design3 = $(".design3");
+
+  design1.on("click", function() {
+    $(".design-modal1").css("display", "flex");
+  });
+
+  design2.on("click", function() {
+    $(".design-modal2").css("display", "flex");
+  });
+
+  design3.on("click", function() {
+    $(".design-modal3").css("display", "flex");
+  });
+
+}
 
 // Navbar //
 
 var navbar = document.getElementById("Navbar");
 var navRevealBtn = document.getElementById("Reveal-Btn");
-var hideNavbar = document.getElementById("Hide-Navbar");
+var lowerHeader = document.querySelector(".lower-header");
 
 // Reveal Navbar
 function revealNavbar(e) {
    navbar.classList.toggle("nav-reveal");
+   //toggles visibility of nav btn
    navRevealBtn.classList.toggle("reveal-toggle");
-   e.preventDefault();
+   //e.preventDefault();
  }
 
 // Navbar Fixed on scroll
-
-var elementPosition = $('#Nav-Section').offset();
-$(window).scroll(function(){
-        if($(window).scrollTop() > elementPosition.top){
-              $('#Nav-Section').css('position','fixed');
-              $('#Nav-Section').css('top','8%');
-        } else {
-            $('#Nav-Section').css('position','absolute');
-        }
-});
+//
+// var elementPosition = $('#Nav-Section').offset();
+// $(window).scroll(function(){
+//         if($(window).scrollTop() > elementPosition.top){
+//               $('#Nav-Section').css('position','fixed');
+//               $('#Nav-Section').css('top','8%');
+//         } else {
+//             $('#Nav-Section').css('position','absolute');
+//         }
+// });
 
 // Hamburger Menu Display On Click
 
 function assembleBurger() {
   $(".hamburger-ingredients-div").slideToggle();
-  $(".hamburger-menu").css("width", "7.5em");
   fixedHeader();
+  $(".nav-section").toggleClass("nav-section-hide");
 }
 
 // Function for fixing header
@@ -53,13 +107,6 @@ function fixedHeader() {
   $(".scrolling-text").toggleClass("scrolling-text-fix");
   $(".hamburger-ingredients-div").toggleClass("hamburger-ingredients-fix");
   $(".hamburger-menu").toggleClass("hamburger-menu-fix");
-}
-
-// Decoding Binary for About Section
-
-function aboutDecode() {
-  $("#about-text-1").addClass("decode1");
-  $(".binary").css("display", "none");
 }
 
 // Hover Effect for source code btns
@@ -75,6 +122,18 @@ sourceBtn.hover(function(){
 });
 
 // Slide effect for Workflow text
+// Mobile workflow text click listeners
+function revealWorkflowText1() {
+  $(".workflow-text1").slideToggle();
+}
+function revealWorkflowText2() {
+  $(".workflow-text2").slideToggle();
+  $(".design-examples-mobile").slideToggle();
+}
+function revealWorkflowText3() {
+  $(".workflow-text3").slideToggle();
+}
+
 // put this in for loop later because this is redundant code
 
 $("#about-list-title1").on("click", function() {

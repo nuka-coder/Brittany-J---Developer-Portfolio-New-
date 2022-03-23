@@ -79,23 +79,50 @@ p {
   margin: 0;
 }
 
+
+/*  Modals */
+  .modal {
+    align-items:
+    center;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1050;
+  }
+
+  .project-modal-imgs,
+  .design-modal-imgs {
+    height: auto;
+    width: 70%;
+  }
+
+  .design-modal-div {
+    height: 80vh;
+    width: 40vw;
+    overflow-y: scroll;
+    text-align: center;
+  }
+
 /* Loading Div */
 .loading-div {
   background-image: url(images/night-sky.jpg);
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed;
   height: 100vh;
   width: 100%;
   text-align: center;
+  top: 0;
 }
 
 .loading-logo {
   height: auto;
   width: 50vw;
   object-fit: contain;
-  /* position: absolute;
-  top: 20%; */
   animation-name: loading;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -117,35 +144,9 @@ p {
   }
 }
 
-/* .loader {
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  z-index: 1;
-  width: 80px;
-  height: 80px;
-  opacity: .6;
-  margin: -76px 0 0 -76px;
-  border: 16px solid var(--base3);
-  border-radius: 50%;
-  border-top: 16px solid var(--primary1);
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */
 /* Overlay */
-.loading-overlay {
-  display: inherit;
-  /* display: none; for loading screen */
+.page-overlay {
+  visibility: hidden;
 }
 
 /* Landing Section  */
@@ -192,12 +193,12 @@ p {
 
 .scrolling-text {
   align-items: center;
-  background-color: var(--secondary1);
+  background-color: var(--primary2);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-left: 10px;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0 5rem;
   position: relative;
   text-align: center;
@@ -206,7 +207,7 @@ p {
 }
 
 .header-tagline {
-  color: var(--base1);
+  color: var(--base3);
   font-family: Raleway, sans-serif;
   font-size: 1.17em;
   font-weight: 800;
@@ -234,7 +235,7 @@ p {
   display: flex;
   height: 3rem;
   justify-content: center;
-  width: 9.5em;
+  width: 10.8rem;
   margin: 0 1rem 1rem 0;
 }
 
@@ -245,7 +246,7 @@ p {
 
 .header-blog {
   background-color: var(--secondary1);
-  border: 3px solid var(--base1);
+  border: 1px solid var(--base1);
   padding: 10px;
   position: absolute;
   text-align: center;
@@ -278,14 +279,13 @@ p {
 /* Hamburger Menu */
 .hamburger-menu {
   align-items: center;
-  background-color: var(--secondary1);
+  background-color: var(--primary2);
   display: none;
   height: 3rem;
   justify-content: center;
-  width: 10.5rem;
   margin-bottom: 1rem;
   position: relative;
-  width: 11em;
+  width: 6em;
 }
 
 .hamburger-menu .fas {
@@ -359,7 +359,7 @@ p {
   background-color: var(--primary1);
   display: inline-flex;
   padding: .5em;
-  width: 7em;
+  width: 7rem;
 }
 
 .issue-number {
@@ -386,12 +386,17 @@ p {
   margin-bottom: 2rem;
   position: absolute;
   left: 0;
-  top: 20%;
+  top: 10%;
   z-index: 1000;
 }
 
+.nav-section-hide {
+  visibility: hidden !important;
+}
+
 .nav-bar {
-  background-color: rgba(80, 115, 95, .7);
+  background-color: #080808;
+  border-radius: 0 5px 5px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -472,6 +477,7 @@ Javascript */
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   margin: 1.5rem 0 0 .8rem;
+  position: absolute;
 }
 
 @keyframes reveal {
@@ -522,10 +528,6 @@ Javascript */
   width: fit-content;
 }
 
-.headings-content {
-  /* margin: -25% 0 auto; */
-}
-
 .name-title {
   color: var(--primary3);
   font-family: american_captainregular;
@@ -540,7 +542,6 @@ Javascript */
   font-family: Raleway, monospace;
   font-size: 2rem;
   font-weight: 700;
-  margin: 0 .5em;
   text-align: center
 }
 
@@ -692,6 +693,8 @@ Javascript */
   font-size: 1em;
   font-weight: 300;
   margin: .5em 0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about-content h5 {
@@ -713,7 +716,6 @@ Javascript */
 }
 
 .about-imgs:hover {
-  cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -736,9 +738,10 @@ Javascript */
 }
 
 .interests-items {
+  color: var(--base1);
   font-family: Raleway, monospace;
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
   margin: .5em 0;
 }
 
@@ -752,8 +755,9 @@ Javascript */
 }
 
 .about-list-title {
-  background-color: var(--primary3);
+  background-color: var(--primary2);
   box-shadow: 5px 3px 5px var(--base1);
+  border: 1.5px solid var(--base1);
   border-radius: 5px;
   color: var(--base3);
   cursor: pointer;
@@ -761,7 +765,6 @@ Javascript */
   font-size: 1.15em;
   font-weight: 300;
   margin: .5em;
-  opacity: .8;
   padding: .3em 3em;
   text-align: center;
   transition: background-color, color, opacity;
@@ -772,14 +775,13 @@ Javascript */
   background-color: var(--primary1);
   box-shadow: 5px 3px 5px rgba(163, 53, 19, .5);
   color: var(--base3);
-  opacity: 1;
 }
 
 .about-list-title:hover {
   background-color: var(--primary1);
+  border: none;
   box-shadow: 5px 3px 5px rgba(163, 53, 19, .5);
   color: var(--base3);
-  opacity: 1;
 }
 
 #about-list-p1 {
@@ -795,6 +797,7 @@ Javascript */
   display: none;
   font-family: Raleway, monospace;
   font-size: 14px;
+  font-weight: 400;
   margin: .5em;
   padding: 1em;
 }
@@ -805,36 +808,28 @@ Javascript */
   overflow-y: auto;
 }
 
-/* Text Decoding */
-.decode1 {
-  display: inline-block !important;
-  animation-name: decoding;
-  animation-duration: 2s;
+.design-examples-desktop,
+.design-examples-mobile {
+  align-items: center;
+  background-color: var(--primary2) !important;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes decoding {
-  from {
-    opacity: 0;
-  }
-
-  to: {
-    opacity: 1;
-  }
-}
-
-.binary {
+.design-links {
+  cursor: pointer;
   font-size: 1em;
+  padding: 2px 5px;
 }
 
-/* About Sliders */
-.novel-items {
-  height: auto;
-  width: 100px;
+.design-links:hover,
+.design-links:active {
+  background-color: var(--base3);
+  border-radius: 5px;
+  color: var(--base1);
+  font-weight: 400;
 }
 
-.interest-slider {
-  display: none;
-}
 
 /* Software and Tools Section */
 .skills-section {
@@ -956,8 +951,17 @@ Javascript */
 .project-thumbnails {
   border: 2px solid var(--base1);
   border-radius: 1rem;
+  box-shadow: 5px 5px 20px;
   height: auto;
   width: 28rem;
+  transition: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.project-thumbnails:hover {
+  box-shadow: 5px 5px 10px;
+  cursor: pointer;
 }
 
 .project-text-div p {
@@ -1082,11 +1086,15 @@ Javascript */
 .cta-subheading {
   color: var(--secondary1);
   font-family: american_captainregular;
-  font-size: 4.5rem;
   letter-spacing: 5px;
   line-height: 1;
   margin: 0;
   text-transform: uppercase;
+}
+
+.cta-heading {
+  font-family: Raleway, monospace;
+  font-size: 3.5rem;
 }
 
 .cta-subheading {
@@ -1339,7 +1347,7 @@ Javascript */
   }
 
   .top-header {
-    background-color: var(--secondary1);
+    background-color: var(--primary2);
     height: 3em;
     margin-bottom: 1rem;
   }
@@ -1516,6 +1524,10 @@ Javascript */
   .github-btns {
     margin: 0 auto 0;
   }
+  .design-modal-div {
+    width: 60vw;
+  }
+
 }
 
 @media only screen and (max-width: 530px) {
@@ -1533,6 +1545,10 @@ Javascript */
   .body,
   .svg-arrow {
     background-color: var(--primary3);
+  }
+
+  .svg-arrow {
+    display: none;
   }
 
   .svg-arrow .shape-fill {
@@ -1614,6 +1630,10 @@ Javascript */
   .skill-image-adobe {
     height: 3em;
   }
+
+  .design-modal-div {
+    width: 80vw;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -1627,6 +1647,13 @@ Javascript */
 
   .responsive-skills-section .skills-row {
     flex-direction: column;
+  }
+
+  #Skills {
+    /* to keep image quality */
+    background-size: contain !important;
+    background-repeat: repeat !important;
+    animation-duration: 8.7s;
   }
 
   .skills-section i {
