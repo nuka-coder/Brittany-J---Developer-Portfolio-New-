@@ -124,7 +124,7 @@ p {
   width: 50vw;
   object-fit: contain;
   animation-name: loading;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: forwards;

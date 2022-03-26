@@ -3,7 +3,7 @@
 // Revealing page
 var toLoad;
 function pageLoading() {
-  toLoad = setTimeout(showPage, 1000);
+  toLoad = setTimeout(showPage, 5000);
 }
 
 function showPage() {
